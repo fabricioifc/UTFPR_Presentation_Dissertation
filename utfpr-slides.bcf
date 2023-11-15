@@ -2475,6 +2475,8 @@
     <bcf:citekey order="32" intorder="1">Andre2021</bcf:citekey>
     <bcf:citekey order="33" intorder="1">Celoss2019</bcf:citekey>
     <bcf:citekey order="34" intorder="1">FocalLoss2020</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">UTFPR2018</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">UTFPR2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

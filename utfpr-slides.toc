@@ -12,8 +12,8 @@
 \beamer@subsectionintoc {2}{6}{Implementação e Adaptações na Rede SegNet e U-NET}{21}{0}{2}
 \beamer@subsectionintoc {2}{7}{Treinamento e Teste}{23}{0}{2}
 \beamer@sectionintoc {3}{Resultados e Discussão}{27}{0}{3}
-\beamer@subsectionintoc {3}{1}{Mais Exemplos de Figuras}{27}{0}{3}
-\beamer@sectionintoc {4}{Conclusões}{27}{0}{4}
-\beamer@subsectionintoc {4}{1}{Descrição das Conclusões Obtidas}{27}{0}{4}
-\beamer@sectionintoc {5}{Refer\^encias}{28}{0}{5}
-\beamer@sectionintoc {6}{Agradecimentos}{30}{0}{6}
+\beamer@subsectionintoc {3}{1}{Resultados Obtidos}{27}{0}{3}
+\beamer@sectionintoc {4}{Conclusões}{29}{0}{4}
+\beamer@subsectionintoc {4}{1}{Descrição das Conclusões Obtidas}{29}{0}{4}
+\beamer@sectionintoc {5}{Refer\^encias}{30}{0}{5}
+\beamer@sectionintoc {6}{Agradecimentos}{32}{0}{6}
