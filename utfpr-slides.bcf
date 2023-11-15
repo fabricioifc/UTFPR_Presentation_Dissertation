@@ -2474,8 +2474,7 @@
     <bcf:citekey order="31" intorder="1">Andre2021</bcf:citekey>
     <bcf:citekey order="32" intorder="1">Andre2021</bcf:citekey>
     <bcf:citekey order="33" intorder="1">Celoss2019</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">UTFPR2018</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">UTFPR2018</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">FocalLoss2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
@@ -2519,4 +2518,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nty/global//global/global"
+                type="entry"
+                sortingtemplatename="nty"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

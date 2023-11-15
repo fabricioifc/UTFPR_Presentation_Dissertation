@@ -398,7 +398,7 @@ A Fig.~\ref{fig:metodologia} apresenta a metodologia utilizada para a realizaç�
 \begin{figure}[!htb]
 \centering%
 \caption{APA-Petrópolis.}%
-\label{fig:apa}
+% \label{fig:apa}
 \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa}}%% Modo apresentação: tamanho da figura
 \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apa}}%% Modo artigo: tamanho da figura
 \source{Adaptado de \textcite{Google Earth, 2023}.}
@@ -734,88 +734,90 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 \begin{block}{Observações}
     Os detalhes de implementação acima foram utilizados em ambos os modelos e consideraram as escolhas de \textcite{Andre2021}.
 \end{block}
-    
-% \begin{table}[!htb]
-%     \centering%
-%     \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
-%     \mode<article>{\small}%% Modo artigo: tamanho de fonte
-%     \caption{Hiperparâmetros da Rede.}%
-%     \label{quad:met:hiperp}%% Rótulo
-%     \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llll}
-%     % \begin{tabular*}{|*{2}{p{0.25\textwidth-\columnsep}|}}%% Ambiente tabular
-%     \toprule
-%     \textbf{Parâmetro}          & \textbf{Valor}        \\
-%     Épocas de Treinamento       & 100                   \\
-%     Tamanho do \textit{Batch}   & 8                    \\ 
-%     Taxa de Aprendizagem        & 1e-2                  \\
-%     \textit{Momentum}           & 0,9                   \\
-%     \textit{Weight Decay}       & 1e-5                  \\
-%     Otimizador                  & SGD - Stochastic Gradient Descent  \\
-%     \bottomrule
-%     \addlinespace
-%     \end{tabular*}
-%     \source{Autoria própria.}
-% \end{table}
-% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
        
 \end{frame}
 
 \begin{frame}
 \framesubtitle{Função de Custo - Entropia Cruzada}
 
-A perda de entropia cruzada é uma medida da diferença entre a distribuição de probabilidade prevista (\(p_i\)) e o \textit{ground truth} dos rótulos para a classe (\(y_i\)), comumente expressa pela Equação \ref{eq:celoss} \cite{Celoss2019}.
+Mede a diferença entre a distribuição de probabilidade prevista (\(p_i\)) e o \textit{ground truth} dos rótulos para a classe (\(y_i\)), comumente expressa pela Equação \ref{eq:celoss} \cite{Celoss2019}.
 
-\begin{block}{Supondo que}
-    \(D = \{(x_1, y_1), ..., (x_i, y_i), ..., (x_M, y_M)\}\), onde \(y_i\) é um vetor representando o rótulo da \(i\)-ésima amostra \(x_i\), \(p_{ij}\) representa a probabilidade de que a amostra \(x_i\) seja atribuída à \(j\)-ésima classe, onde \(j\) varia de 1 a \(M\), sendo \(M\) o número total de classes.
-\end{block}
+% \begin{block}{Supondo que}
+%     \(D = \{(x_1, y_1), ..., (x_i, y_i), ..., (x_M, y_M)\}\), onde \(y_i\) é um vetor representando o rótulo da \(i\)-ésima amostra \(x_i\), \(p_{ij}\) representa a probabilidade de que a amostra \(x_i\) seja atribuída à \(j\)-ésima classe, onde \(j\) varia de 1 a \(M\), sendo \(M\) o número total de classes.
+% \end{block}
 
 \begin{equation}\label{eq:celoss}
 L_{CE} = -\frac{1}{M}\sum_{i=1}^{M}\left ( y_i^{T} log\left ( p_i \right ) \right )
 \end{equation}
 
 \noindent
-onde \(L_{CE}\) é a perda de entropia cruzada, \(y\) é o \textit{ground truth}, \(p\) é o vetor de probabilidades atribuídas a cada classe. A soma é realizada sobre todas as classes.
+onde \(M\) é o número total de classes, \(L_{CE}\) é a função de entropia cruzada, \(y_i^{T}\) é o vetor (\textit{ground truth}) transposto de \(y_i\), \(p\) é o vetor de probabilidades atribuídas a cada classe.
+
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Função de Custo - \textit{Focal Loss}}
+
+É uma modificação da função de entropia cruzada que visa resolver o problema de desbalanceamento de classes, dando maior peso às classes minoritárias. A função é definida pela Equação \ref{eq:focal} \cite{FocalLoss2020}.
+
+\begin{equation}\label{eq:focal}
+FL(p_t) = -\sum_{i=1}^{C} (1 - p_{ti})^\gamma \cdot \log(p_{ti})
+\end{equation}
+
+\noindent
+onde:
+\begin{itemize}
+    \item \(C\) é o número de classes.
+    \item \(p_ti\) é a probabilidade prevista da classe verdadeira.
+    \item \(\gamma\) é um parâmetro de foco ajustável.
+    \item O termo \((1 - p_ti)^\gamma\) reduz o peso da perda para exemplos bem classificados, focando mais nos exemplos difíceis e mal classificados.
+    \item Quando \(p_t\) está próximo de 1 (indicando uma previsão confiante e correta), a perda é reduzida.
+\end{itemize}
+
+Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o modelo se concentre mais em regiões desafiadoras.
 
 \end{frame}
 
 \section{Resultados e Discussão}\label{sec:resuldisc}
 
+
+
 \subsection{Mais Exemplos de Figuras}\label{ssec:resuldisc1}
 
-\begin{frame}[allowframebreaks]
-As Figs.~\ref{fig:graficoxy1} e~\ref{fig:graficoxy2} são mais exemplos de figuras inseridas usando o ambiente \LaTeX\ \enquote{figure} e dispostas em duas colunas.
-\begin{columns}[T]
-\column{0.5\textwidth}
-\begin{figure}[!htb]
-\centering%
-\caption{Exemplo de legenda de figura.}%
-\label{fig:graficoxy1}
-\mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-\source{Autoria própria.}
-\end{figure}
-\column{0.5\textwidth}
-\begin{figure}[!htb]
-\centering%
-\caption{Exemplo de legenda de figura.}%
-\label{fig:graficoxy2}
-\mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-\source{autoria própria.}
-\end{figure}
-\end{columns}
-\framebreak%
-\mode<article>{\par}%% Modo artigo: quebra de parágrafo
-A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da UTFPR\@.
-\begin{figure}[!htb]
-\centering%
-\caption{Mapa com a localização dos câmpus da UTFPR.}%
-\label{fig:mapacampus}
-\mode<presentation>{\includegraphics[width = 0.4\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-\source{\textcite{UTFPR2018}.}
-\end{figure}
-\end{frame}
+% \begin{frame}[allowframebreaks]
+% As Figs.~\ref{fig:graficoxy1} e~\ref{fig:graficoxy2} são mais exemplos de figuras inseridas usando o ambiente \LaTeX\ \enquote{figure} e dispostas em duas colunas.
+% \begin{columns}[T]
+% \column{0.5\textwidth}
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Exemplo de legenda de figura.}%
+% \label{fig:graficoxy1}
+% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
+% \source{Autoria própria.}
+% \end{figure}
+% \column{0.5\textwidth}
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Exemplo de legenda de figura.}%
+% \label{fig:graficoxy2}
+% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
+% \source{autoria própria.}
+% \end{figure}
+% \end{columns}
+% \framebreak%
+% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
+% A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da UTFPR\@.
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Mapa com a localização dos câmpus da UTFPR.}%
+% \label{fig:mapacampus}
+% \mode<presentation>{\includegraphics[width = 0.4\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
+% \source{\textcite{UTFPR2018}.}
+% \end{figure}
+% \end{frame}
 
 \section{Conclusões}\label{sec:concl}
 
@@ -833,41 +835,40 @@ A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da
 \end{block}
 \end{frame}
 
-% DESCOMENTAR DEPOIS
-% \mode<presentation>{%% Modo apresentação: referências
-%   \section{\refname}\label{sec:refs}%
-%   \frame[allowframebreaks]{%
-%     \framesubtitle{~}%
-%     \printbibliography[heading = none]%
-%   }%
-% }
+\mode<presentation>{%% Modo apresentação: referências
+  \section{\refname}\label{sec:refs}%
+  \frame[allowframebreaks]{%
+    \framesubtitle{~}%
+    \printbibliography[heading = none]%
+  }%
+}
 
-% \mode<article>{\printbibliography}%% Modo artigo: referências
+\mode<article>{\printbibliography}%% Modo artigo: referências
 
-% \section{Agradecimentos}\label{sec:agrad}
+\section{Agradecimentos}\label{sec:agrad}
 
-% \respnotice[Declaração de Responsabilidade]{O(s) autor(es) é(são) o(s) único(s) responsável(eis) pelas informações contidas neste documento.}
+\respnotice[Declaração de Responsabilidade]{O(s) autor(es) é(são) o(s) único(s) responsável(eis) pelas informações contidas neste documento.}
 
-% \begin{frame}{}{\mode<presentation>{~}}
-% Às organizações de fomento, pelo apoio recebido para o desenvolvimento deste trabalho e a participação neste evento:
-% \begin{center}
-% \includegraphics[height = 10mm]{./Logos/apoio-capes}
-% \hfill%
-% \includegraphics[height = 10mm]{./Logos/apoio-cnpq}
-% \hfill%
-% \includegraphics[height = 10mm]{./Logos/apoio-fa-gov-pr}
-% \hfill%
-% \includegraphics[height = 10mm]{./Logos/utfpr}
-% \end{center}
-% \mode<presentation>{%% Modo apresentação: agradecimentos e declaração de responsabilidade
-%   Aos presentes, pela atenção\sfootnote[frame]{\faStickyNoteO~\textbf{\respnoticetitle:}\space\MakeLowercase{\respnoticetext}}.%
-% }
-% \end{frame}
+\begin{frame}{}{\mode<presentation>{~}}
+Às organizações de fomento, pelo apoio recebido para o desenvolvimento deste trabalho e a participação neste evento:
+\begin{center}
+\includegraphics[height = 10mm]{./Logos/apoio-capes}
+\hfill%
+\includegraphics[height = 10mm]{./Logos/apoio-cnpq}
+\hfill%
+\includegraphics[height = 10mm]{./Logos/apoio-fa-gov-pr}
+\hfill%
+\includegraphics[height = 10mm]{./Logos/utfpr}
+\end{center}
+\mode<presentation>{%% Modo apresentação: agradecimentos e declaração de responsabilidade
+  Aos presentes, pela atenção\sfootnote[frame]{\faStickyNoteO~\textbf{\respnoticetitle:}\space\MakeLowercase{\respnoticetext}}.%
+}
+\end{frame}
 
-% \mode<article>{%% Modo artigo: declaração de responsabilidade
-%   \section{\respnoticetitle}\label{sec:declar}%
-%   \respnoticetext%
-% }
+\mode<article>{%% Modo artigo: declaração de responsabilidade
+  \section{\respnoticetitle}\label{sec:declar}%
+  \respnoticetext%
+}
 
 %% Fim do documento
 \end{document}

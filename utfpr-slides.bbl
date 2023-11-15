@@ -571,6 +571,55 @@
       \verb 10.1109/TVT.2019.2895651
       \endverb
     \endentry
+    \entry{FocalLoss2020}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d87be7c19fa16049347907c9820816c6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecd149fdcb3e0503881d49e545744c3d}{%
+           family={Dollár},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{fullhash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \strng{bibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorbibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorfullhash}{4ccabcfdf9c34f3d9a88fdca5bb95dd5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{title}{Focal Loss for Dense Object Detection}
+      \field{year}{2017}
+    \endentry
     \entry{Khanh2021}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=321af5b5133d3b9517a4a4d29bdda63c}{%
@@ -760,43 +809,6 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1905.11946
-      \endverb
-    \endentry
-    \entry{UTFPR2018}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44de341ea2a1cbeca29edc3575721b2d}{%
-           family={UTFPR},
-           familyi={U\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ponta Grossa, PR}%
-      }
-      \strng{namehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{fullhash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{bibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authorbibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authornamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authorfullhash}{44de341ea2a1cbeca29edc3575721b2d}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Portal da Universidade Tecnológica Federal do Paraná (UTFPR)}
-      \field{note}{Galeria de fotos}
-      \field{title}{Câmpus Ponta Grossa}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2018}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
-      \endverb
-      \verb{url}
-      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
       \endverb
     \endentry
     \entry{PythonManual}{book}{}
