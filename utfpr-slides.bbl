@@ -1,0 +1,849 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Alam2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=05a67486caf22976335f82295c563794}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23790b1118c119eee3ba29e6a23dc592}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jian-Feng},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b4dcf5173762728249b257a5c9dde06}{%
+           family={Guangpei},
+           familyi={G\bibinitperiod},
+           given={Cong},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91ef3fe82d58b02d979a625e443de756}{%
+           family={Yunrong},
+           familyi={Y\bibinitperiod},
+           given={L\bibnamedelima V},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7ff8e5a5f0083cbccb4a4c32d3d5924}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yuanfang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
+      \strng{fullhash}{092e0e21858b2f3b8977893d9991498b}
+      \strng{bibnamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
+      \strng{authorbibnamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
+      \strng{authornamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
+      \strng{authorfullhash}{092e0e21858b2f3b8977893d9991498b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mobile Networks and Applications}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Convolutional Neural Network for the Semantic Segmentation of Remote Sensing Images}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{200\bibrangedash 215}
+      \range{pages}{16}
+    \endentry
+    \entry{Marcatto2022}{article}{}
+      \name{author}{15}{}{%
+        {{un=0,uniquepart=base,hash=34a316564ad344ea42ecae25e68290fd}{%
+           family={Bressan},
+           familyi={B\bibinitperiod},
+           given={Patrik\bibnamedelima Olã},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9656493c222db5827f5ba0c39aa69a4}{%
+           family={Junior},
+           familyi={J\bibinitperiod},
+           given={José\bibnamedelima Marcato},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55591870f09f10ff37e6e9f215fda9e0}{%
+           family={{Correa Martins}},
+           familyi={C\bibinitperiod},
+           given={José\bibnamedelima Augusto},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d27f9065f235d730e9b33c626d619626}{%
+           family={{de Melo}},
+           familyi={d\bibinitperiod},
+           given={Maximilian\bibnamedelima Jaderson},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=042fd1c6cc750ee2b122e06a6a384f71}{%
+           family={Gonçalves},
+           familyi={G\bibinitperiod},
+           given={Diogo\bibnamedelima Nunes},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0a56b631f16725fc9d31e61d8890e06}{%
+           family={Freitas},
+           familyi={F\bibinitperiod},
+           given={Daniel\bibnamedelima Matte},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27f7d836f8bf45d5e874bbbac509f94e}{%
+           family={{Marques Ramos}},
+           familyi={M\bibinitperiod},
+           given={Ana\bibnamedelima Paula},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a4b2ab02d952c028e0e78e62756b4b3}{%
+           family={{Garcia Furuya}},
+           familyi={G\bibinitperiod},
+           given={Michelle\bibnamedelima Taís},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e86b42a878d8a86e7e3fde0cb2c9bf08}{%
+           family={Osco},
+           familyi={O\bibinitperiod},
+           given={Lucas\bibnamedelima Prado},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44370fdbd8a2f27809449894bb699ecc}{%
+           family={{de Andrade Silva}},
+           familyi={d\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cb1165eec29e7f9b7c7ebf75722c31d}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Zhipeng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5686a70870e7a086fffa6cb09d990f12}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Raymundo\bibnamedelima Cordero},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e249243aa82bb0d1edd8303fdf32322}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Lingfei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=099a58f50432fae0961d03bb2073f8ca}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=675e31770dd438337cf154c02b2ae038}{%
+           family={Gonçalves},
+           familyi={G\bibinitperiod},
+           given={Wesley\bibnamedelima Nunes},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{598acabcd8254abae36d777a358a0c6f}
+      \strng{fullhash}{fd96747e9e91ba18988646648073305f}
+      \strng{bibnamehash}{598acabcd8254abae36d777a358a0c6f}
+      \strng{authorbibnamehash}{598acabcd8254abae36d777a358a0c6f}
+      \strng{authornamehash}{598acabcd8254abae36d777a358a0c6f}
+      \strng{authorfullhash}{fd96747e9e91ba18988646648073305f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1569-8432}
+      \field{journaltitle}{International Journal of Applied Earth Observation and Geoinformation}
+      \field{title}{Semantic segmentation with labeling uncertainty and class imbalance applied to vegetation mapping}
+      \field{volume}{108}
+      \field{year}{2022}
+      \field{pages}{102690}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jag.2022.102690
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0303243422000162
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0303243422000162
+      \endverb
+    \endentry
+    \entry{Chen2021}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b1de7b146fbb68252948480c0a75eb4}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yameng},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e9bdcbb8bbc1d52ef1d6e391b4b5a59}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=995d7bd5179e0265111934414c911ab0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lan},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc617d960881076d2fb4a79fc5f5394a}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Xubin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dd54699b2c2473b656e16cb77363635}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{46dc3b07a9540484d03b9e9b392b984f}
+      \strng{fullhash}{813b1a015b5cd49a05a82100fc44593f}
+      \strng{bibnamehash}{46dc3b07a9540484d03b9e9b392b984f}
+      \strng{authorbibnamehash}{46dc3b07a9540484d03b9e9b392b984f}
+      \strng{authornamehash}{46dc3b07a9540484d03b9e9b392b984f}
+      \strng{authorfullhash}{813b1a015b5cd49a05a82100fc44593f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-1699}
+      \field{journaltitle}{Computers and Electronics in Agriculture}
+      \field{title}{Mapping agricultural plastic greenhouses using Google Earth images and deep learning}
+      \field{volume}{191}
+      \field{year}{2021}
+      \field{pages}{106552}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compag.2021.106552
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S016816992100569X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S016816992100569X
+      \endverb
+    \endentry
+    \entry{cvat}{software}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b13d1722a467c1f743513e6b27111d1}{%
+           family={CVAT.ai},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{fullhash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{bibnamehash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{authorbibnamehash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{authornamehash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{authorfullhash}{8b13d1722a467c1f743513e6b27111d1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{opencv/cvat: v2.4.0}
+      \field{version}{v2.4.0}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.5281/zenodo.7739965
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.7739965
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.7739965
+      \endverb
+    \endentry
+    \entry{Andre2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f4ee94186af8a859142738129d304c4e}{%
+           family={{de Souza Brito}},
+           familyi={d\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56d06ebd158382f0ce4cbad05b5770a8}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Marcelo\bibnamedelima Bernardes},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b85523efd889b9cfc74f7fdfae3e2f6e}{%
+           family={{de Andrade}},
+           familyi={d\bibinitperiod},
+           given={Mauren\bibnamedelimb Louise\bibnamedelimb Sguario\bibnamedelima Coelho},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83486f372878b145306785365669ec75}{%
+           family={Feitosa},
+           familyi={F\bibinitperiod},
+           given={Raul\bibnamedelima Queiroz},
+           giveni={R\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71d10bcd5f65097a6cea5022bbc70029}{%
+           family={Giraldi},
+           familyi={G\bibinitperiod},
+           given={Gilson\bibnamedelima Antonio},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03ee7d1fe5d1295979487829774797ca}
+      \strng{fullhash}{faebdbdc0fc32ec69584158a76dd6477}
+      \strng{bibnamehash}{03ee7d1fe5d1295979487829774797ca}
+      \strng{authorbibnamehash}{03ee7d1fe5d1295979487829774797ca}
+      \strng{authornamehash}{03ee7d1fe5d1295979487829774797ca}
+      \strng{authorfullhash}{faebdbdc0fc32ec69584158a76dd6477}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0957-4174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Combining max-pooling and wavelet pooling strategies for semantic image segmentation}
+      \field{volume}{183}
+      \field{year}{2021}
+      \field{pages}{115403}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eswa.2021.115403
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0957417421008253
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0957417421008253
+      \endverb
+    \endentry
+    \entry{Imagenet2009}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0ae7fdc13773f928525f673b05f37149}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d87c5957b07153c7f18918b92830bf8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5670b2600fea169724521e252d9d09d}{%
+           family={Socher},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2afdae52015b97674d81efea449edce2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Li-Jia},
+           giveni={L\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4838f7fdd28d5cefb28f3b3c734976d4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
+           family={Fei-Fei},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{990420f755e01028377fcad1464c9706}
+      \strng{fullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \strng{bibnamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authorbibnamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authornamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authorfullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{ImageNet: A large-scale hierarchical image database}
+      \field{year}{2009}
+      \field{pages}{248\bibrangedash 255}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CVPR.2009.5206848
+      \endverb
+    \endentry
+    \entry{Arcgis}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd7a8d0745b5a8d8db4729da6f81992a}{%
+           family={{ESRI INC.}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \strng{fullhash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \strng{bibnamehash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \strng{authorbibnamehash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \strng{authornamehash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \strng{authorfullhash}{fd7a8d0745b5a8d8db4729da6f81992a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: 24 mar 2023}
+      \field{title}{ArcGIS Pro}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.esri.com/pt-br/arcgis/products/arcgis-pro/overview
+      \endverb
+      \verb{url}
+      \verb https://www.esri.com/pt-br/arcgis/products/arcgis-pro/overview
+      \endverb
+    \endentry
+    \entry{Farhangfar2019}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d9d58403d7d13744df47c0618ea1239e}{%
+           family={Farhangfar},
+           familyi={F\bibinitperiod},
+           given={Saghar},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18b1524e527b55858742a463f83cd62f}{%
+           family={Rezaeian},
+           familyi={R\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98e129077981ce35158d9df86b3bf840}
+      \strng{fullhash}{98e129077981ce35158d9df86b3bf840}
+      \strng{bibnamehash}{98e129077981ce35158d9df86b3bf840}
+      \strng{authorbibnamehash}{98e129077981ce35158d9df86b3bf840}
+      \strng{authornamehash}{98e129077981ce35158d9df86b3bf840}
+      \strng{authorfullhash}{98e129077981ce35158d9df86b3bf840}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 27th Iranian Conference on Electrical Engineering (ICEE)}
+      \field{title}{Semantic Segmentation of Aerial Images using FCN-based Network}
+      \field{year}{2019}
+      \field{pages}{1864\bibrangedash 1868}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/IranianCEE.2019.8786455
+      \endverb
+    \endentry
+    \entry{Miniconda}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59cd5b3acbefa1da81d2f5c524fa0b5f}{%
+           family={INC},
+           familyi={I\bibinitperiod},
+           given={ANACONDA},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \strng{fullhash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \strng{bibnamehash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \strng{authorbibnamehash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \strng{authornamehash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \strng{authorfullhash}{59cd5b3acbefa1da81d2f5c524fa0b5f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: 24 mar 2023}
+      \field{title}{Anaconda Documentation: Release 2.0}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://readthedocs.com/projects/continuumio-docs/downloads/pdf/latest
+      \endverb
+      \verb{url}
+      \verb https://readthedocs.com/projects/continuumio-docs/downloads/pdf/latest
+      \endverb
+    \endentry
+    \entry{Celoss2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b5ce5c3d4c49b5481644c3d0a06ed656}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiaoxu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c221956f9c518150953d34adaef42c4}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Liyun},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0d2b2cdb05ffc9ded38dc5a9b9f62ff}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Dongliang},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dd215db511b070b621286a0b1fa4c4e}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Zhanyu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c40aa498e849f7f722883a4ae1fb336}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b9bc1244c8af76eeabbf28bc35b4dd24}
+      \strng{fullhash}{6da61a1e7f0958216845f62bc021041f}
+      \strng{bibnamehash}{b9bc1244c8af76eeabbf28bc35b4dd24}
+      \strng{authorbibnamehash}{b9bc1244c8af76eeabbf28bc35b4dd24}
+      \strng{authornamehash}{b9bc1244c8af76eeabbf28bc35b4dd24}
+      \strng{authorfullhash}{6da61a1e7f0958216845f62bc021041f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Vehicular Technology}
+      \field{number}{5}
+      \field{title}{Dual Cross-Entropy Loss for Small-Sample Fine-Grained Vehicle Classification}
+      \field{volume}{68}
+      \field{year}{2019}
+      \field{pages}{4204\bibrangedash 4212}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TVT.2019.2895651
+      \endverb
+    \endentry
+    \entry{Khanh2021}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=321af5b5133d3b9517a4a4d29bdda63c}{%
+           family={Nguyen-Khanh},
+           familyi={N\bibinithyphendelim K\bibinitperiod},
+           given={Loi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba394c61dda9de887ae9fa1dccc310d3}{%
+           family={Nguyen-Ngoc-Yen},
+           familyi={N\bibinithyphendelim N\bibinithyphendelim Y\bibinitperiod},
+           given={Vy},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2668add3877ab7a4a38ff991c446adc6}{%
+           family={Dinh-Quoc},
+           familyi={D\bibinithyphendelim Q\bibinitperiod},
+           given={Hung},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f37529e2a5da8235250737049dbd80a}
+      \strng{fullhash}{4f37529e2a5da8235250737049dbd80a}
+      \strng{bibnamehash}{4f37529e2a5da8235250737049dbd80a}
+      \strng{authorbibnamehash}{4f37529e2a5da8235250737049dbd80a}
+      \strng{authornamehash}{4f37529e2a5da8235250737049dbd80a}
+      \strng{authorfullhash}{4f37529e2a5da8235250737049dbd80a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 8th NAFOSTED Conference on Information and Computer Science (NICS)}
+      \field{title}{U-Net Semantic Segmentation of Digital Maps Using Google Satellite Images}
+      \field{year}{2021}
+      \field{pages}{386\bibrangedash 391}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/NICS54270.2021.9701566
+      \endverb
+    \endentry
+    \entry{NvidiaCuda}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Acesso em: 24 mar 2023}
+      \field{title}{CUDA Toolkit Documentation 12.1}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://docs.nvidia.com/cuda/
+      \endverb
+      \verb{url}
+      \verb https://docs.nvidia.com/cuda/
+      \endverb
+    \endentry
+    \entry{pytorch}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=56bf0b340039cf8594436a624ff548a9}{%
+           family={Paszke},
+           familyi={P\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ba5062e5919c814aceec188d54c01f2}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ef51a0906e47d2b4472c4e714ed598f}{%
+           family={Chintala},
+           familyi={C\bibinitperiod},
+           given={Soumith},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f897ed422c34d95af2e22778dfc2607e}{%
+           family={Chanan},
+           familyi={C\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9e701339e56fd0b171145b08288a1b7}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f9535be511fd2fa346093e63b8e61a0}{%
+           family={DeVito},
+           familyi={D\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c40352c194e60a3ef458ee7e8685afb5}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Zeming},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=954cf7680b6ce14813973eccdca3c4bc}{%
+           family={Desmaison},
+           familyi={D\bibinitperiod},
+           given={Alban},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f65a80959d520337ae99a0798515036c}{%
+           family={Antiga},
+           familyi={A\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5815e1692fa2d0c1f44eecf509bd7c4}{%
+           family={Lerer},
+           familyi={L\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{fullhash}{8e924960ee7482ab2452016228f53660}
+      \strng{bibnamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authorbibnamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authornamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authorfullhash}{8e924960ee7482ab2452016228f53660}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{NIPS Autodiff Workshop}
+      \field{title}{Automatic Differentiation in {PyTorch}}
+      \field{year}{2017}
+    \endentry
+    \entry{EfficientNet}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c636f146591d51579a8119b777394878}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V.},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{fullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{bibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorbibnamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authornamehash}{d029e8131f7a0bef056d7edc726f1529}
+      \strng{authorfullhash}{d029e8131f7a0bef056d7edc726f1529}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks}
+      \field{volume}{abs/1905.11946}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.11946
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.11946
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.11946
+      \endverb
+    \endentry
+    \entry{UTFPR2018}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44de341ea2a1cbeca29edc3575721b2d}{%
+           family={UTFPR},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ponta Grossa, PR}%
+      }
+      \strng{namehash}{44de341ea2a1cbeca29edc3575721b2d}
+      \strng{fullhash}{44de341ea2a1cbeca29edc3575721b2d}
+      \strng{bibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
+      \strng{authorbibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
+      \strng{authornamehash}{44de341ea2a1cbeca29edc3575721b2d}
+      \strng{authorfullhash}{44de341ea2a1cbeca29edc3575721b2d}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Portal da Universidade Tecnológica Federal do Paraná (UTFPR)}
+      \field{note}{Galeria de fotos}
+      \field{title}{Câmpus Ponta Grossa}
+      \field{urlday}{5}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
+      \endverb
+      \verb{url}
+      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
+      \endverb
+    \endentry
+    \entry{PythonManual}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e504145eff12cd8803c227c919ccfacd}{%
+           family={Van\bibnamedelima Rossum},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Scotts Valley, CA}%
+      }
+      \list{publisher}{1}{%
+        {CreateSpace}%
+      }
+      \strng{namehash}{e504145eff12cd8803c227c919ccfacd}
+      \strng{fullhash}{e504145eff12cd8803c227c919ccfacd}
+      \strng{bibnamehash}{e504145eff12cd8803c227c919ccfacd}
+      \strng{authorbibnamehash}{e504145eff12cd8803c227c919ccfacd}
+      \strng{authornamehash}{e504145eff12cd8803c227c919ccfacd}
+      \strng{authorfullhash}{e504145eff12cd8803c227c919ccfacd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1441412690}
+      \field{title}{Python 3 Reference Manual}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+  \missing{(LI et al.}
+  \missing{2013)}
+  \missing{2018}
+  \missing{2020}
+  \missing{2021}
+  \missing{2023}
+  \missing{Google Earth}
+  \missing{HU et al.}
+  \missing{Nguyen-Khanh et al. (2021)}
+  \missing{Peterson et al. (2014)}
+  \missing{Ronneberger et al. (2015)}
+  \missing{SOUZA BRITO et al.}
+  \missing{ZIN; LIN}
+\endrefsection
+\endinput
+
