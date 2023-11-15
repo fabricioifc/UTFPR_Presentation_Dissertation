@@ -1,3 +1,5 @@
+# LaTeX Slides Presentation Template for UTFPR
+
 This LaTeX template (unofficial) allows the slides presentation production of the Federal University of Technology — Paraná (UTFPR).
 
 It was developed based on the abnTeX2 slides presentation template, available at <http://www.abntex.net.br/>, created by Fabio Rodrigues Silva using the beamer class, available at <http://ctan.org/pkg/beamer/>, as well as several code snippets developed by TeX-LaTeX Stack Exchange users, available at <http://tex.stackexchange.com/>.
@@ -12,3 +14,8 @@ Foi desenvolvido baseado no modelo de apresentação de slides do abnTeX2, dispo
 
 Estado: adicionado por Luiz E. M. Lima, manutenção sob demanda.
 Última atualização: 1 de dezembro de 2019 (Versão 1.2).
+
+Used by Fabricio Bizotto for his master degree presentation at UTFPR - Ponta Grossa, Brazil in 2023.
+
+## How to use
+To use this template, you must have a LaTeX distribution installed on your computer. If you do not have one, you can install it by following the instructions available at <http://www.latex-project.org/get/>.
