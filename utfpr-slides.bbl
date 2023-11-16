@@ -811,43 +811,6 @@
       \verb http://arxiv.org/abs/1905.11946
       \endverb
     \endentry
-    \entry{UTFPR2018}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=44de341ea2a1cbeca29edc3575721b2d}{%
-           family={UTFPR},
-           familyi={U\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ponta Grossa, PR}%
-      }
-      \strng{namehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{fullhash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{bibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authorbibnamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authornamehash}{44de341ea2a1cbeca29edc3575721b2d}
-      \strng{authorfullhash}{44de341ea2a1cbeca29edc3575721b2d}
-      \field{sortinit}{U}
-      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Portal da Universidade Tecnológica Federal do Paraná (UTFPR)}
-      \field{note}{Galeria de fotos}
-      \field{title}{Câmpus Ponta Grossa}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2018}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
-      \endverb
-      \verb{url}
-      \verb http://portal.utfpr.edu.br/comunicacao/galeria-de-fotos/
-      \endverb
-    \endentry
     \entry{PythonManual}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e504145eff12cd8803c227c919ccfacd}{%

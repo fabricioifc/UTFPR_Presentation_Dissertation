@@ -50,6 +50,7 @@
   ABNTNum = none,%% Estilo numérico ABNT: none (AUTOR, ANO), dflt (1) e brkt [1]
 ]{utfpr-slides}
 \usepackage{color,soul}
+\sethlcolor{yellow}
 
 %% Arquivo de referências
 \addbibresource{utfpr-slides.bib}
@@ -595,7 +596,7 @@ Sombra                  &       2,0468              \\
 Área em Regeneração     &       0,4436              \\
 Agricultura             &       1,4859              \\
 Rocha                   &       2,4287              \\
-Solo Exposto            &       \hl{5,2043}              \\ 
+Solo Exposto            &       \colorbox{yellow}{5,2043}              \\ 
 Água                    &       2,0031              \\
 \bottomrule
 \addlinespace
@@ -780,42 +781,289 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 
 \section{Resultados e Discussão}\label{sec:resuldisc}
 
-\subsection{Resultados Obtidos}\label{ssec:resuldisc1}
+\subsection{Cenários}\label{ssec:resuldisc1}
 
-\begin{frame}[allowframebreaks]
-As Figs.~\ref{fig:graficoxy1} e~\ref{fig:graficoxy2} são mais exemplos de figuras inseridas usando o ambiente \LaTeX\ \enquote{figure} e dispostas em duas colunas.
-\begin{columns}[T]
-\column{0.5\textwidth}
-\begin{figure}[!htb]
-\centering%
-\caption{Exemplo de legenda de figura.}%
-\label{fig:graficoxy1}
-\mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-\source{Autoria própria.}
-\end{figure}
-\column{0.5\textwidth}
-\begin{figure}[!htb]
-\centering%
-\caption{Exemplo de legenda de figura.}%
-\label{fig:graficoxy2}
-\mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-\source{autoria própria.}
-\end{figure}
-\end{columns}
-\framebreak%
-\mode<article>{\par}%% Modo artigo: quebra de parágrafo
-A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da UTFPR\@.
-\begin{figure}[!htb]
-\centering%
-\caption{Mapa com a localização dos câmpus da UTFPR.}%
-\label{fig:mapacampus}
-\mode<presentation>{\includegraphics[width = 0.4\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-\source{\textcite{UTFPR2018}.}
-\end{figure}
+\begin{frame}
+
+\begin{itemize}
+    \item \textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.
+    \begin{itemize}
+        \item Experimento 1: \textbf{pesos iguais (1)}.
+        \item Experimento 2: \textbf{pesos ponderados}. 
+        \item Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).
+    \end{itemize}
+\end{itemize}
+\begin{itemize}
+    \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+    \begin{itemize}
+        \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+        \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+        \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
+    \end{itemize}
+\end{itemize}
+\begin{itemize}
+    \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
+    \begin{itemize}
+        \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+        \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+    \end{itemize}
+\end{itemize}
+\begin{itemize}
+    \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
+    \begin{itemize}
+        \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
+        \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
+    \end{itemize}
+\end{itemize}
+
+% \begin{block}{Observações}
+%     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+% \end{block}
 \end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.
+        \begin{itemize}
+            \item Experimento 1: \textbf{com aumento de dados}.
+            \item Experimento 2: \textbf{sem aumento de dados}.
+            \item Ambos usam pesos ponderados na função de custo.
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.
+        \begin{itemize}
+            \item Experimento 1: \textbf{com aumento de dados}.
+            \item Experimento 2: \textbf{sem aumento de dados}.
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
+\end{frame}
+
+
+\begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.
+        \begin{itemize}
+            \item Experimento 1: SegNet Modificada \textbf{com aumento de dados}.
+            \item Experimento 2: U-NET \textbf{com aumento de dados}.
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
+    \colorbox{yellow}{Aumento de dados: \textbf{Espelhamento horizontal e vertical}.}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 1 - Distribuição de pesos na função de custo}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Pesos ponderados para a função de custo no cenário 1.}%% Legenda
+    \label{tab:res:cen1:pesos}%% Rótulo
+    \begin{tabular}{ll}
+    \toprule
+        \textbf{Classe} & \textbf{Peso} \\ \midrule
+        \textbf{Área Desenvolvida}          & 0,9786 \\ 
+        \textbf{Floresta}                   & 0,3264 \\ 
+        \colorbox{yellow}{\textbf{Piscina}  & 51,3827} \\ 
+        \textbf{Sombra}                     & 1,7031 \\ 
+        \textbf{Área em Regeneração}        & 0,3702 \\ 
+        \textbf{Agricultura}                & 1,2344 \\ 
+        \textbf{Rocha}                      & 2,0176 \\ 
+        \textbf{Solo Exposto}               & 4,8396 \\ 
+        \textbf{Água}                       & 10,5859 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+    
+\end{frame}
+
+\begin{frame}
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da SegNet no cenário 1 com pesos iguais.}%% Legenda
+    \label{tab:res:cen11}%% Rótulo
+    % \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llllll}
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida} & 0.79 & 0.80 & 0.80 & 0.66  \\ 
+        \textbf{Floresta} & 0.89 & 0.87 & 0.88 & 0.78  \\ 
+        \textbf{Piscina} & 0.18 & 0.89 & 0.30 & 0.17  \\ 
+        \textbf{Sombra} & 0.86 & 0.80 & 0.83 & 0.70  \\ 
+        \textbf{Regeneração} & 0.73 & 0.89 & 0.80 & 0.66  \\ 
+        \textbf{Agricultura} & 0.82 & 0.83 & 0.82 & 0.70  \\ 
+        \textbf{Rocha} & 0.86 & 0.45 & 0.59 & 0.42  \\ 
+        \textbf{Solo Exposto} & 0.56 & 0.20 & 0.29 & 0.17  \\ 
+        \textbf{Água} & 0.45 & 0.06 & 0.11 & 0.05 \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.81 & ~ & IoU & 0.48 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\column{0.5\linewidth}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da SegNet no cenário 2 com pesos ponderados.}%% Legenda
+    \label{tab:res:cen12}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}               & 0.71 & 0.76 & 0.73 & 0.57  \\ 
+        \textbf{Floresta}                   & 0.89 & 0.67 & 0.76 & 0.61  \\ 
+        \textbf{Piscina}                    & 0.18 & \textbf{0.99} & 0.30 & 0.18  \\ 
+        \textbf{Sombra}                     & 0.60 & \textbf{0.86} & 0.71 & 0.55  \\ 
+        \textbf{Regeneração}                & \textbf{0.80} & 0.44 & 0.56 & 0.39  \\ 
+        \textbf{Agricultura}                & 0.66 & 0.76 & 0.70 & 0.54  \\ 
+        \textbf{Rocha}                      & 0.37 & \textbf{0.69} & 0.48 & 0.31  \\ 
+        \textbf{Solo Exposto}               & 0.09 & \textbf{0.40} & 0.14 & 0.08  \\ 
+        \textbf{Água}                       & \textbf{0.46} & \textbf{0.73} & \textbf{0.56} & \textbf{0.39} \\ 
+        \textbf{} & ~ & ~ & ~ &  ~ \\ 
+        \textbf{Acurácia} & 0.65 & ~ & IoU & 0.40 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{columns}
+\end{frame}
+
+% \begin{frame}[allowframebreaks]
+% As Figs.~\ref{fig:graficoxy1} e~\ref{fig:graficoxy2} são mais exemplos de figuras inseridas usando o ambiente \LaTeX\ \enquote{figure} e dispostas em duas colunas.
+% \begin{columns}[T]
+% \column{0.5\textwidth}
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Exemplo de legenda de figura.}%
+% \label{fig:graficoxy1}
+% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
+% \source{Autoria própria.}
+% \end{figure}
+% \column{0.5\textwidth}
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Exemplo de legenda de figura.}%
+% \label{fig:graficoxy2}
+% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
+% \source{autoria própria.}
+% \end{figure}
+% \end{columns}
+% \framebreak%
+% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
+% A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da UTFPR\@.
+% \begin{figure}[!htb]
+% \centering%
+% \caption{Mapa com a localização dos câmpus da UTFPR.}%
+% \label{fig:mapacampus}
+% \mode<presentation>{\includegraphics[width = 0.4\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
+% \source{\textcite{UTFPR2018}.}
+% \end{figure}
+% \end{frame}
 
 \section{Conclusões}\label{sec:concl}
 
