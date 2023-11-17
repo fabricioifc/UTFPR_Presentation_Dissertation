@@ -13,7 +13,7 @@
 \beamer@subsectionintoc {2}{7}{Treinamento e Teste}{23}{0}{2}
 \beamer@sectionintoc {3}{Resultados e Discussão}{27}{0}{3}
 \beamer@subsectionintoc {3}{1}{Cenários}{27}{0}{3}
-\beamer@sectionintoc {4}{Conclusões}{33}{0}{4}
-\beamer@subsectionintoc {4}{1}{Descrição das Conclusões Obtidas}{33}{0}{4}
-\beamer@sectionintoc {5}{Refer\^encias}{34}{0}{5}
-\beamer@sectionintoc {6}{Agradecimentos}{36}{0}{6}
+\beamer@sectionintoc {4}{Conclusões}{41}{0}{4}
+\beamer@subsectionintoc {4}{1}{Descrição das Conclusões Obtidas}{41}{0}{4}
+\beamer@sectionintoc {5}{Refer\^encias}{42}{0}{5}
+\beamer@sectionintoc {6}{Agradecimentos}{44}{0}{6}

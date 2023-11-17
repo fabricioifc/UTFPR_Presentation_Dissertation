@@ -586,7 +586,7 @@ Total                   & 322 \\
 \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
 \mode<article>{\small}%% Modo artigo: tamanho de fonte
 \caption{Pesos calculados para o conjunto de treinamento.}%% Legenda
-\label{tab:tools}
+\label{tab:pesos}
 \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lr}
 \toprule
 \textbf{Classe}         & \textbf{Peso}             \\ \midrule
@@ -948,10 +948,10 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
     \label{tab:res:cen1:pesos}%% Rótulo
     \begin{tabular}{ll}
     \toprule
-        \textbf{Classe} & \textbf{Peso} \\ \midrule
+        \textbf{Classe}                     & \textbf{Peso} \\ \midrule
         \textbf{Área Desenvolvida}          & 0,9786 \\ 
         \textbf{Floresta}                   & 0,3264 \\ 
-        \colorbox{yellow}{\textbf{Piscina}  & 51,3827} \\ 
+        \textbf{Piscina}                    & \colorbox{yellow}{51,3827} \\ 
         \textbf{Sombra}                     & 1,7031 \\ 
         \textbf{Área em Regeneração}        & 0,3702 \\ 
         \textbf{Agricultura}                & 1,2344 \\ 
@@ -963,10 +963,17 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
     \end{tabular}
     \source{Autoria própria.}%% Fonte
 \end{table}
-    
+
+\begin{block}{Observações}
+    \begin{itemize}
+        \item \textbf{Piscina}: maior peso.
+        \item Os demais cenários consideram os pesos calculados e apresentados na \textbf{Tabela \ref{tab:pesos}}.
+    \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
+\framesubtitle{Cenário 1 - Análise dos Resultados}
 \begin{columns}[T]
 
 \column{0.5\linewidth}
@@ -983,15 +990,15 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \midrule
         \textbf{Desenvolvida} & 0.79 & 0.80 & 0.80 & 0.66  \\ 
         \textbf{Floresta} & 0.89 & 0.87 & 0.88 & 0.78  \\ 
-        \textbf{Piscina} & 0.18 & 0.89 & 0.30 & 0.17  \\ 
+        \textbf{Piscina} & \colorbox{yellow}{0.18}\footnote<.->{Proporção de VP mantida em ambos os experimentos.} & 0.89 & 0.30 & 0.17  \\ 
         \textbf{Sombra} & 0.86 & 0.80 & 0.83 & 0.70  \\ 
         \textbf{Regeneração} & 0.73 & 0.89 & 0.80 & 0.66  \\ 
         \textbf{Agricultura} & 0.82 & 0.83 & 0.82 & 0.70  \\ 
         \textbf{Rocha} & 0.86 & 0.45 & 0.59 & 0.42  \\ 
         \textbf{Solo Exposto} & 0.56 & 0.20 & 0.29 & 0.17  \\ 
-        \textbf{Água} & 0.45 & 0.06 & 0.11 & 0.05 \\ 
+        \textbf{Água} & 0.45 & \colorbox{red!25}{0.06} & \colorbox{red!25}{0.11} & 0.05 \\ 
         \textbf{} & ~ & ~ & ~ & ~ \\ 
-        \textbf{Acurácia} & 0.81 & ~ & IoU & 0.48 \\
+        \textbf{Acurácia} & \colorbox{green!25}{0.81}\footnote<.->{Ponderação nos pesos pode ter afetado a acurácia.} & ~ & \textbf{IoU} & 0.48 \\
         \bottomrule
         \addlinespace
     \end{tabular}
@@ -1012,15 +1019,15 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \midrule
         \textbf{Desenvolvida}               & 0.71 & 0.76 & 0.73 & 0.57  \\ 
         \textbf{Floresta}                   & 0.89 & 0.67 & 0.76 & 0.61  \\ 
-        \textbf{Piscina}                    & 0.18 & \textbf{0.99} & 0.30 & 0.18  \\ 
-        \textbf{Sombra}                     & 0.60 & \textbf{0.86} & 0.71 & 0.55  \\ 
-        \textbf{Regeneração}                & \textbf{0.80} & 0.44 & 0.56 & 0.39  \\ 
+        \textbf{Piscina}                    & \colorbox{yellow}{0.18} & 0.99 & 0.30 & 0.18  \\ 
+        \textbf{Sombra}                     & 0.60 & 0.86 & 0.71 & 0.55  \\ 
+        \textbf{Regeneração}                & 0.80 & 0.44 & 0.56 & 0.39  \\ 
         \textbf{Agricultura}                & 0.66 & 0.76 & 0.70 & 0.54  \\ 
-        \textbf{Rocha}                      & 0.37 & \textbf{0.69} & 0.48 & 0.31  \\ 
-        \textbf{Solo Exposto}               & 0.09 & \textbf{0.40} & 0.14 & 0.08  \\ 
-        \textbf{Água}                       & \textbf{0.46} & \textbf{0.73} & \textbf{0.56} & \textbf{0.39} \\ 
+        \textbf{Rocha}                      & 0.37 & 0.69 & 0.48 & 0.31  \\ 
+        \textbf{Solo Exposto}               & 0.09 & 0.40 & 0.14 & 0.08  \\ 
+        \textbf{Água}                       & 0.46 & \colorbox{green!25}{0.73}\footnote<.->{Redução significativa nos falsos negativos} & \colorbox{green!25}{0.56}\footnote<.->{Melhor equilíbrio entre precisão e sensibilidade} & \colorbox{green!25}{0.39}\footnote<.->{Melhoria na sobreposição entre \textit{Ground Truth} e previsão na segmentação.} \\ 
         \textbf{} & ~ & ~ & ~ &  ~ \\ 
-        \textbf{Acurácia} & 0.65 & ~ & IoU & 0.40 \\
+        \textbf{Acurácia} & \colorbox{red!25}{0.65} & ~ & \textbf{IoU} & 0.40 \\
         \bottomrule
         \addlinespace
     \end{tabular}
@@ -1030,40 +1037,352 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{columns}
 \end{frame}
 
-% \begin{frame}[allowframebreaks]
-% As Figs.~\ref{fig:graficoxy1} e~\ref{fig:graficoxy2} são mais exemplos de figuras inseridas usando o ambiente \LaTeX\ \enquote{figure} e dispostas em duas colunas.
-% \begin{columns}[T]
-% \column{0.5\textwidth}
-% \begin{figure}[!htb]
-% \centering%
-% \caption{Exemplo de legenda de figura.}%
-% \label{fig:graficoxy1}
-% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-% \source{Autoria própria.}
-% \end{figure}
-% \column{0.5\textwidth}
-% \begin{figure}[!htb]
-% \centering%
-% \caption{Exemplo de legenda de figura.}%
-% \label{fig:graficoxy2}
-% \mode<presentation>{\includegraphics[width = \columnwidth]{./Figuras/graficoxy}}%% Modo apresentação: tamanho da figura
-% \mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/graficoxy}}%% Modo artigo: tamanho da figura
-% \source{autoria própria.}
-% \end{figure}
-% \end{columns}
-% \framebreak%
-% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
-% A Fig.~\ref{fig:mapacampus} apresenta um mapa com a localização dos câmpus da UTFPR\@.
-% \begin{figure}[!htb]
-% \centering%
-% \caption{Mapa com a localização dos câmpus da UTFPR.}%
-% \label{fig:mapacampus}
-% \mode<presentation>{\includegraphics[width = 0.4\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-% \mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/mapacampus}}%% Modo apresentação: tamanho da figura
-% \source{\textcite{UTFPR2018}.}
-% \end{figure}
-% \end{frame}
+\begin{frame}
+\framesubtitle{Cenário 1 - Matriz de Confusão}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 1 com pesos iguais.}%
+\label{fig:matriz:cen11}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_11-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_11-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\column{0.5\linewidth}
+
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 2 com pesos ponderados.}%
+\label{fig:matriz:cen12}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_12-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_12-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 2 - Análise dos Resultados}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da SegNet no cenário 2 com aumento de dados.}%% Legenda
+    \label{tab:res:cen12}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida} & 0.83 & 0.77 & 0.80 & 0.66  \\ 
+        \textbf{Floresta} & 0.94 & 0.77 & 0.85 & 0.74  \\ 
+        \textbf{Sombra} & 0.69 & 0.93 & 0.79 & 0.66  \\ 
+        \textbf{Regeneração} & 0.83 & 0.66 & 0.73 & 0.58  \\ 
+        \textbf{Agricultura} & 0.83 & 0.77 & 0.80 & 0.66  \\ 
+        \textbf{Rocha} & 0.50 & 0.77 & 0.61 & 0.43 \\ 
+        \textbf{Solo Exposto} & 0.17 & 0.79 & 0.28 & 0.16 \\ 
+        \textbf{Água} & 0.72 & 0.89 & 0.79 & 0.66 \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.76 & ~ & \textbf{IoU} & 0.57 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\column{0.5\linewidth}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da SegNet no cenário 2 sem aumento de dados.}%% Legenda
+    \label{tab:res:cen22}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}    & \textbf{0.84} & \textbf{0.84} & \textbf{0.84} & \textbf{0.72}  \\ 
+        \textbf{Floresta}        & \textbf{0.95} & 0.76 & \textbf{0.85} & 0.73  \\ 
+        \textbf{Sombra}          & \textbf{0.70} & 0.92 & \textbf{0.80} & \textbf{0.67}  \\ 
+        \textbf{Regeneração}     & \textbf{0.88} & 0.65 & \textbf{0.75} & \textbf{0.60}  \\ 
+        \textbf{Agricultura}     & \textbf{0.72} & \textbf{0.93} & \textbf{0.81} & \textbf{0.69}  \\ 
+        \textbf{Rocha}           & \textbf{0.55} & \textbf{0.83} & \textbf{0.66} & \textbf{0.50}  \\ 
+        \textbf{Solo Exposto}    & \textbf{0.27} & 0.73 & \textbf{0.40} & \textbf{0.25}  \\ 
+        \textbf{Água}            & \textbf{0.89} & \textbf{0.95} & \textbf{0.92} & \textbf{0.85} \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.79 & ~ & \textbf{IoU} & 0.62 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 2 - Matriz de Confusão}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 2 com aumento de dados.}%
+\label{fig:matriz:cen21}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_21-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_21-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\column{0.5\linewidth}
+
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 2 sem aumento de dados.}%
+\label{fig:matriz:cen22}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_22-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_22-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 3 - Análise dos Resultados}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da U-NET no cenário 3 com aumento de dados.}%% Legenda
+    \label{tab:res:cen31}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}               & 0.89 & 0.81 & 0.85 & 0.73 \\ 
+        \textbf{Floresta}                   & 0.96 & 0.80 & 0.87 & 0.77 \\ 
+        \textbf{Sombra}                     & 0.68 & 0.94 & 0.79 & 0.65 \\ 
+        \textbf{Regeneração}                & 0.86 & 0.64 & 0.73 & 0.58 \\ 
+        \textbf{Agricultura}                & 0.80 & 0.96 & 0.87 & 0.77 \\ 
+        \textbf{Rocha}                      & 0.52 & 0.91 & 0.66 & 0.49 \\ 
+        \textbf{Solo Exposto}               & 0.31 & 0.73 & 0.43 & 0.28 \\ 
+        \textbf{Água}                       & 0.96 & 0.93 & 0.95 & 0.90 \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.81 & ~ & \textbf{IoU} & 0.65 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\column{0.5\linewidth}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da U-NET no cenário 3 sem aumento de dados.}%% Legenda
+    \label{tab:res:cen32}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}               & 0.89 & \textbf{0.87} & \textbf{0.88} & \textbf{0.79} \\ 
+        \textbf{Floresta}                   & 0.92 & \textbf{0.89} & \textbf{0.91} & \textbf{0.83} \\ 
+        \textbf{Sombra}                     & \textbf{0.87} & 0.83 & \textbf{0.85} & \textbf{0.73} \\ 
+        \textbf{Regeneração}                & 0.82 & \textbf{0.88} & \textbf{0.85} & \textbf{0.74} \\ 
+        \textbf{Agricultura}                & \textbf{0.86} & 0.95 & \textbf{0.90} & \textbf{0.82} \\ 
+        \textbf{Rocha}                      & \textbf{0.80} & 0.71 & \textbf{0.75} & \textbf{0.60} \\ 
+        \textbf{Solo Exposto}               & \textbf{0.70} & 0.42 & \textbf{0.52} & \textbf{0.35} \\ 
+        \textbf{Água}                       & \textbf{0.98} & 0.88 & 0.93 & 0.86 \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        % \textbf{Kappa} & 0.84 ~ & & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.87 & ~ & \textbf{IoU} & 0.72 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 3 - Matriz de Confusão}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 3 com aumento de dados.}%
+\label{fig:matriz:cen31}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_31-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_31-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\column{0.5\linewidth}
+
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 3 sem aumento de dados.}%
+\label{fig:matriz:cen32}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_32-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_32-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 4 - Análise dos Resultados}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da SegNet no cenário 4 com \textit{Focal Loss}.}%% Legenda
+    \label{tab:res:cen41}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}   & 0.85 & 0.86 & 0.86 & 0.75  \\ 
+        \textbf{Floresta}       & 0.89 & 0.90 & 0.89 & 0.81  \\ 
+        \textbf{Sombra}         & 0.89 & 0.74 & 0.81 & 0.68  \\ 
+        \textbf{Regeneração}    & 0.75 & 0.89 & 0.81 & 0.68  \\ 
+        \textbf{Agricultura}    & 0.85 & 0.85 & 0.85 & 0.74  \\ 
+        \textbf{Rocha}          & 0.61 & 0.53 & 0.57 & 0.40  \\ 
+        \textbf{Solo Exposto}   & 0.52 & 0.22 & 0.31 & 0.18  \\ 
+        \textbf{Água}           & 0.98 & 0.43 & 0.60 & 0.42 \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.83 & ~ & \textbf{IoU} & 0.58 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\column{0.5\linewidth}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Resultados da U-NET no cenário 4 com \textit{Focal Loss}.}%% Legenda
+    \label{tab:res:cen42}%% Rótulo
+    \begin{tabular}{lllll}
+    \toprule
+        \textbf{Classe} & \textbf{Prec} & \textbf{Sens} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{Desenvolvida}    & \textbf{0.90} & \textbf{0.86} & \textbf{0.88} & \textbf{0.79}  \\ 
+        \textbf{Floresta}        & \textbf{0.91} & \textbf{0.91} & \textbf{0.91} & \textbf{0.83}  \\ 
+        \textbf{Sombra}          & \textbf{0.89} & \textbf{0.80} & \textbf{0.84} & \textbf{0.73}  \\ 
+        \textbf{Regeneração}     & \textbf{0.80} & 0.88 & \textbf{0.84} & \textbf{0.72}  \\ 
+        \textbf{Agricultura}     & \textbf{0.85} & \textbf{0.94} & \textbf{0.89} & \textbf{0.81}  \\ 
+        \textbf{Rocha}           & \textbf{0.81} & \textbf{0.67} & \textbf{0.74} & \textbf{0.58}  \\ 
+        \textbf{Solo Exposto}    & \textbf{0.75} & \textbf{0.36} & \textbf{0.49} & \textbf{0.32}  \\ 
+        \textbf{Água}            & \textbf{0.99} & \textbf{0.89} & \textbf{0.94} & \textbf{0.88}  \\ 
+        \textbf{} & ~ & ~ & ~ & ~ \\ 
+        \textbf{Acurácia} & 0.87 & ~ & \textbf{IoU} & 0.71 \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Cenário 4 - Matriz de Confusão}
+
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 4 com \textit{Focal Loss}.}%
+\label{fig:matriz:cen41}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_41-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_41-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\column{0.5\linewidth}
+
+\begin{figure}[!htb]
+\centering%
+\caption{Matriz de confusão do cenário 4 com \textit{Focal Loss}.}%
+\label{fig:matriz:cen42}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/cm/cm_cenario_42-min.png}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.5\columnwidth]{./Figuras/cm/cm_cenario_42-min.png}}%% Modo artigo: tamanho da figura
+\source{Autoria própria.}
+\end{figure}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Comparação dos Resultados}
+
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    \caption{Comparação dos resultados obtidos.}%% Legenda
+    \label{tab:res:comparacao}%% Rótulo
+    \begin{tabular}{llllll}
+    \toprule
+        \textbf{Cenário} & \textbf{Acurácia} & \textbf{Precisão} & \textbf{Sensibilidade} & \textbf{F1-Score} & \textbf{IoU} \\
+        \midrule
+        \textbf{1} & \colorbox{green!25}{0.81} & 0.65 & 0.06 & 0.11 & 0.05 \\ 
+        \textbf{2} & \colorbox{red!25}{0.65} & 0.66 & 0.73 & 0.69 & 0.40 \\ 
+        \textbf{3} & 0.81 & 0.80 & 0.96 & 0.87 & 0.77 \\ 
+        \textbf{4} & 0.83 & 0.85 & 0.86 & 0.86 & 0.75 \\ 
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{frame}
+
+% Crie um frame com uma tabela comparativa entre os quatro cenários de experimentos. A tabela deve conter os seguintes dados: acurácia, precisão, sensibilidade, F1-Score e IoU. A tabela deve ser criada com base nos r
+% esultados obtidos
+
+\begin{frame}
+\frametitle{Comparação dos Resultados}
+\framesubtitle{Acurácia}
+
+\begin{figure}[!htb]
+\centering%
+\caption{Comparação da acurácia obtida nos cenários de experimentos.}%
+\label{fig:res:acuracia}
+\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/boxplot/boxplot_acuracia-min.png}}%% Modo apresentação: tamanho da figura
+
+
+
 
 \section{Conclusões}\label{sec:concl}
 
@@ -1118,43 +1437,3 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 
 %% Fim do documento
 \end{document}
-
-
-% \begin{frame}
-% \begin{columns}[T]
-% \column{0.5\textwidth}
-% A Tab.~\ref{tab:Ldimens} é um exemplo de tabela inserida usando o ambiente \LaTeX\ \enquote{table} e numerada automaticamente.
-% \begin{table}[!htb]
-% \centering%
-% \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
-% \mode<article>{\small}%% Modo artigo: tamanho de fonte
-% \caption{Exemplo de legenda de tabela.}%
-% \label{tab:Ldimens}
-% \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llll}
-% \toprule
-% $L$   & $L^2$     & $L^3$     & $L^4$     \\
-% {[m]} & {[m$^2$]} & {[m$^3$]} & {[m$^4$]} \\
-% \midrule
-% 1     & 1         & 1         & 1         \\
-% 2     & 4         & 8         & 16        \\
-% 3     & 9         & 27        & 81        \\
-% 4     & 16        & 64        & 256       \\
-% 5     & 25        & 125       & 625       \\
-% \bottomrule
-% \addlinespace
-% \end{tabular*}
-% \source{autoria própria.}
-% \end{table}
-% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
-% Para gerar ou editar tabelas em \LaTeX, pode-se utilizar a ferramenta \enquote{\href{http://www.tablesgenerator.com/}{Tables Generator~\linkicon}}, entre outras.
-% \column{0.5\textwidth}
-% \begin{figure}[!htb]
-% \centering%
-% \caption{APA-Petrópolis.}%
-% \label{fig:apa}
-% \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa}}%% Modo apresentação: tamanho da figura
-% \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apa}}%% Modo artigo: tamanho da figura
-% \source{\textcite{Google Earth, 2023}.}
-% \end{figure}
-% \end{columns}
-% \end{frame}
