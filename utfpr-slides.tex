@@ -51,6 +51,7 @@
 ]{utfpr-slides}
 \usepackage{color,soul}
 \sethlcolor{yellow}
+\usepackage{multirow}
 
 %% Arquivo de referências
 \addbibresource{utfpr-slides.bib}
@@ -209,22 +210,22 @@ A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do R
 \end{columns}
 \end{frame}
 
-\begin{frame}{Introdução}
-\begin{itemize}
-    \item A cobertura e utilização do solo \textbf{(Land Use and Land Cover - LULC)}
-    % \item O desenvolvimento socioeconômico dos seres humanos tem sido fortemente apoiado pelo uso da terra, sendo a urbanização um dos principais exemplos de mudanças de ocupação do solo em todo o mundo \cite{LIU, 2018}.
-    \item Compreender a relação entre cobertura e uso da terra é essencial para gerir os recursos naturais, mitigar as alterações climáticas e proteger a biodiversidade \cite{ZIN; LIN, 2018}.
-    \item Mudanças antropogênicas abrangem o desflorestamento, desocupação, urbanização, alterações nos tipos de cultivo e adaptações nas práticas utilizadas em cada uso do solo, tais como, técnicas de plantio e sistemas de rotação de cultura florestal \cite{Peterson et al. (2014)}.
-    % \begin{block}{Principais desafios no monitoramento da APA}
-    %     \begin{itemize}
-    %         \item Grandes equipes de trabalho especializada
-    %         \item Deslocamento à regiões de difícil acesso
-    %         \item Alto custo para manutenção das equipes
-    %         \item Perigos associados as características de fauna e flora de cada região
-    %     \end{itemize}
-    % \end{block}
-\end{itemize}
-\end{frame}
+% \begin{frame}{Introdução}
+% \begin{itemize}
+%     \item A cobertura e utilização do solo \textbf{(Land Use and Land Cover - LULC)}
+%     % \item O desenvolvimento socioeconômico dos seres humanos tem sido fortemente apoiado pelo uso da terra, sendo a urbanização um dos principais exemplos de mudanças de ocupação do solo em todo o mundo \cite{LIU, 2018}.
+%     \item Compreender a relação entre cobertura e uso da terra é essencial para gerir os recursos naturais, mitigar as alterações climáticas e proteger a biodiversidade \cite{ZIN; LIN, 2018}.
+%     \item Mudanças antropogênicas abrangem o desflorestamento, desocupação, urbanização, alterações nos tipos de cultivo e adaptações nas práticas utilizadas em cada uso do solo, tais como, técnicas de plantio e sistemas de rotação de cultura florestal \cite{Peterson et al. (2014)}.
+%     % \begin{block}{Principais desafios no monitoramento da APA}
+%     %     \begin{itemize}
+%     %         \item Grandes equipes de trabalho especializada
+%     %         \item Deslocamento à regiões de difícil acesso
+%     %         \item Alto custo para manutenção das equipes
+%     %         \item Perigos associados as características de fauna e flora de cada região
+%     %     \end{itemize}
+%     % \end{block}
+% \end{itemize}
+% \end{frame}
 
 \begin{frame}{Introdução}
 
@@ -239,7 +240,7 @@ A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do R
 
     \begin{block}{Possibilidades}
         \begin{itemize}
-            \item Imagens de satélite disponíveis gratuitamente (baixa resolução)
+            \item Imagens de satélite disponíveis gratuitamente
             \item VANT (Veículo Aéreo não Tripulado) (custo alto)
             \item Imagens Aéreas RGB da plataforma Google Earth
         \end{itemize}
@@ -249,7 +250,7 @@ A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do R
 
 
 
-\subsection{\textbf{Objetivo Geral}}\label{ssec:intro1}
+\subsection{Objetivo Geral}\label{ssec:intro1}
 
 \begin{frame}
 O objetivo geral deste trabalho é o desenvolvimento de uma nova metodologia para segmentação semântica de imagens de sensoriamento remoto do Google a fim de gerar o mapa de cobertura e uso do solo da região da APA-Petrópolis, Rio de Janeiro por meio de RNC
@@ -289,7 +290,8 @@ de dados.
 \subsection{Trabalhos Relacionados}\label{sec:intro3}
 
 \begin{frame}
-    1. Construção de mapas digitais a partir de imagens de satélite, utilizando a arquitetura U-Net com EfficientNet-B0 como codificador e decodificador \textbf{\cite{Khanh2021}}.
+    % 1. Construção de mapas digitais a partir de imagens de satélite, utilizando a arquitetura U-Net com EfficientNet-B0 como codificador e decodificador \textbf{\cite{Khanh2021}}.
+    1.  Construção de mapas digitais a partir de imagens aéreas do Google, usando a arquitetura EfficientNet-B0 como codificador para extrair as características geográficas e U-Net como decodificador para reconstruir o mapa de características.
     \begin{figure}[!htb]
         \centering%
         \caption{Resultado da segmentação semântica no conjunto de dados do Google com a arquitetura proposta.}%
@@ -315,7 +317,7 @@ de dados.
 \end{frame}
 
 \begin{frame}
-    3. Redes U-Net para segmentar estufas agrícolas de plástico em imagens de sensoriamento remoto de alta resolução. A abordagem foi dividida em três etapas: coleta e anotação de imagens, treinamento da rede U-Net e pós-processamento para remover elementos confundíveis com as estufas \textbf{\cite{Chen2021}}.
+    3. Arquitetura U-Net para segmentar estufas agrícolas de plástico em imagens de sensoriamento remoto de alta resolução. A abordagem foi dividida em três etapas: coleta e anotação de imagens, treinamento da rede U-Net e pós-processamento para remover elementos confundíveis com as estufas \textbf{\cite{Chen2021}}.
     \begin{figure}[!htb]
         \centering%
         \caption{Dificuldade em extrair estufas densamente distribuidas.}%
@@ -429,12 +431,12 @@ A Tab.~\ref{tab:tools} apresenta o conjunto de ferramentas utilizado durante o t
 \label{tab:tools}
 \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}ll}
 \toprule
-Python                                  & \cite{PythonManual}           \\
-PyTorch                                 & \cite{pytorch}                \\
-Cuda Toolkit                            & \cite{NvidiaCuda}                \\
-Miniconda                               & \cite{Miniconda}                \\
-ArcGis Pro (parceria com UFMS           & \cite{Arcgis}                \\
-Computer Vision Annotation Tool         & \cite{cvat}                \\
+Python                                   & \cite{PythonManual}           \\
+PyTorch                                  & \cite{pytorch}                \\
+Cuda Toolkit                             & \cite{NvidiaCuda}                \\
+Miniconda                                & \cite{Miniconda}                \\
+ArcGis Pro (parceria com UFMS)           & \cite{Arcgis}                \\
+\textit{Computer Vision Annotation Tool} & \cite{cvat}                \\
 \bottomrule
 \addlinespace
 \end{tabular*}
@@ -683,7 +685,7 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
     \item Conjunto de dados dividido em treinamento e teste (Ver Tabela \ref{tab:separacao}).
     \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \cite{Andre2021}.
     \item \textbf{10.000} amostras de \textbf{256x256}.
-    \item Inicialização dos pesos: Pesos pré-treinados \cite{Imagenet2009}.
+    \item Inicialização dos pesos: Pesos pré-treinados na ImageNet \cite{Imagenet2009}.
 \end{itemize}
 
 \begin{columns}[T]
@@ -822,122 +824,6 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{frame}
 
 \begin{frame}
-
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
-            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.
-        \begin{itemize}
-            \item Experimento 1: \textbf{com aumento de dados}.
-            \item Experimento 2: \textbf{sem aumento de dados}.
-            \item Ambos usam pesos ponderados na função de custo.
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
-        \end{itemize}
-    \end{itemize}
-    
-    % \begin{block}{Observações}
-    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
-    % \end{block}
-\end{frame}
-
-\begin{frame}
-
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
-            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
-            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.
-        \begin{itemize}
-            \item Experimento 1: \textbf{com aumento de dados}.
-            \item Experimento 2: \textbf{sem aumento de dados}.
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
-        \end{itemize}
-    \end{itemize}
-    
-    % \begin{block}{Observações}
-    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
-    % \end{block}
-\end{frame}
-
-
-\begin{frame}
-
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
-            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
-            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
-        \begin{itemize}
-            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
-            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
-        \end{itemize}
-    \end{itemize}
-    \begin{itemize}
-        \item \textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.
-        \begin{itemize}
-            \item Experimento 1: SegNet Modificada \textbf{com aumento de dados}.
-            \item Experimento 2: U-NET \textbf{com aumento de dados}.
-        \end{itemize}
-    \end{itemize}
-    
-    % \begin{block}{Observações}
-    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
-    % \end{block}
-    \colorbox{yellow}{Aumento de dados: \textbf{Espelhamento horizontal e vertical}.}
-\end{frame}
-
-\begin{frame}
 \framesubtitle{Cenário 1 - Distribuição de pesos na função de custo}
 
 \begin{table}[!ht]
@@ -1067,6 +953,45 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{frame}
 
 \begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.
+        \begin{itemize}
+            \item Experimento 1: \textbf{com aumento de dados}.
+            \item Experimento 2: \textbf{sem aumento de dados}.
+            \item Ambos usam pesos ponderados na função de custo.
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
+    \colorbox{yellow}{Aumento de dados: \textbf{Espelhamento horizontal e vertical}.}
+\end{frame}
+
+\begin{frame}
 \framesubtitle{Cenário 2 - Análise dos Resultados}
 
 \begin{columns}[T]
@@ -1114,12 +1039,12 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \textbf{Floresta}        & \textbf{0.95} & 0.76 & \textbf{0.85} & 0.73  \\ 
         \textbf{Sombra}          & \textbf{0.70} & 0.92 & \textbf{0.80} & \textbf{0.67}  \\ 
         \textbf{Regeneração}     & \textbf{0.88} & 0.65 & \textbf{0.75} & \textbf{0.60}  \\ 
-        \textbf{Agricultura}     & \textbf{0.72} & \textbf{0.93} & \textbf{0.81} & \textbf{0.69}  \\ 
+        \textbf{Agricultura}     & 0.72 & \textbf{0.93} & \textbf{0.81} & \textbf{0.69}  \\ 
         \textbf{Rocha}           & \textbf{0.55} & \textbf{0.83} & \textbf{0.66} & \textbf{0.50}  \\ 
         \textbf{Solo Exposto}    & \textbf{0.27} & 0.73 & \textbf{0.40} & \textbf{0.25}  \\ 
-        \textbf{Água}            & \textbf{0.89} & \textbf{0.95} & \textbf{0.92} & \textbf{0.85} \\ 
+        \textbf{Água}            & \textbf{0.89} & \colorbox{green!25}{0.95} & \colorbox{green!25}{0.92} & \colorbox{green!25}{0.85} \\ 
         \textbf{} & ~ & ~ & ~ & ~ \\ 
-        \textbf{Acurácia} & 0.79 & ~ & \textbf{IoU} & 0.62 \\
+        \textbf{Acurácia} & \colorbox{green!25}{0.79} & ~ & \textbf{IoU} & \colorbox{green!25}{0.62} \\
         \bottomrule
         \addlinespace
     \end{tabular}
@@ -1156,6 +1081,44 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{figure}
 
 \end{columns}
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.
+        \begin{itemize}
+            \item Experimento 1: \textbf{com aumento de dados}.
+            \item Experimento 2: \textbf{sem aumento de dados}.
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: SegNet Modificada \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: U-NET \textbf{com aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
 \end{frame}
 
 \begin{frame}
@@ -1212,7 +1175,7 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \textbf{Água}                       & \textbf{0.98} & 0.88 & 0.93 & 0.86 \\ 
         \textbf{} & ~ & ~ & ~ & ~ \\ 
         % \textbf{Kappa} & 0.84 ~ & & ~ & ~ & ~ \\ 
-        \textbf{Acurácia} & 0.87 & ~ & \textbf{IoU} & 0.72 \\
+        \textbf{Acurácia} & \colorbox{green!25}{0.87} & ~ & \textbf{IoU} & \colorbox{green!25}{0.72} \\
         \bottomrule
         \addlinespace
     \end{tabular}
@@ -1249,6 +1212,44 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{figure}
 
 \end{columns}
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 1}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{pesos iguais (1)}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{pesos ponderados}.}
+            \item \textcolor{lightgray}{Utilização de 9 classes (8 classes + \colorbox{yellow}{piscina}).}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 2}: SegNet Modificada, usando a função de custo \textbf{Entropia Cruzada}.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+            \item \textcolor{lightgray}{Ambos usam pesos ponderados na função de custo.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textcolor{lightgray}{\textbf{Cenário 3}: U-NET, usando a função de custo \textbf{Entropia Cruzada} com pesos ponderados.}
+        \begin{itemize}
+            \item \textcolor{lightgray}{Experimento 1: \textbf{com aumento de dados}.}
+            \item \textcolor{lightgray}{Experimento 2: \textbf{sem aumento de dados}.}
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item \textbf{Cenário 4}: SegNet Modificada e U-NET, usando a função de custo \textbf{Focal Loss}.
+        \begin{itemize}
+            \item Experimento 1: SegNet Modificada \textbf{com aumento de dados}.
+            \item Experimento 2: U-NET \textbf{com aumento de dados}.
+        \end{itemize}
+    \end{itemize}
+    
+    % \begin{block}{Observações}
+    %     Aumento de dados: \textbf{Espelhamento horizontal e vertical}.
+    % \end{block}
 \end{frame}
 
 \begin{frame}
@@ -1301,10 +1302,10 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \textbf{Regeneração}     & \textbf{0.80} & 0.88 & \textbf{0.84} & \textbf{0.72}  \\ 
         \textbf{Agricultura}     & \textbf{0.85} & \textbf{0.94} & \textbf{0.89} & \textbf{0.81}  \\ 
         \textbf{Rocha}           & \textbf{0.81} & \textbf{0.67} & \textbf{0.74} & \textbf{0.58}  \\ 
-        \textbf{Solo Exposto}    & \textbf{0.75} & \textbf{0.36} & \textbf{0.49} & \textbf{0.32}  \\ 
-        \textbf{Água}            & \textbf{0.99} & \textbf{0.89} & \textbf{0.94} & \textbf{0.88}  \\ 
+        \textbf{Solo Exposto}    & \colorbox{green!25}{0.75} & \textbf{0.36} & \colorbox{green!25}{0.49} & \colorbox{green!25}{0.32}  \\ 
+        \textbf{Água}            & \textbf{0.99} & \colorbox{green!25}{0.89} & \colorbox{green!25}{0.94} & \colorbox{green!25}{0.88}  \\ 
         \textbf{} & ~ & ~ & ~ & ~ \\ 
-        \textbf{Acurácia} & 0.87 & ~ & \textbf{IoU} & 0.71 \\
+        \textbf{Acurácia} & \colorbox{green!25}{0.87} & ~ & \textbf{IoU} & \colorbox{green!25}{0.71} \\
         \bottomrule
         \addlinespace
     \end{tabular}
@@ -1344,48 +1345,242 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 \end{frame}
 
 \begin{frame}
-\framesubtitle{Comparação dos Resultados}
+\framesubtitle{Comparação dos Resultados - Acurácia}
 
 \begin{table}[!ht]
     \centering
     \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
     \mode<article>{\small}%% Modo artigo: tamanho de fonte
-    \caption{Comparação dos resultados obtidos.}%% Legenda
-    \label{tab:res:comparacao}%% Rótulo
-    \begin{tabular}{llllll}
+    \caption{Comparativo de acurária dos experimentos em cada cenário.}%% Legenda
+    \label{tab:res:acuracia}%% Rótulo
+    \begin{tabular}{lrrrr}
     \toprule
-        \textbf{Cenário} & \textbf{Acurácia} & \textbf{Precisão} & \textbf{Sensibilidade} & \textbf{F1-Score} & \textbf{IoU} \\
+        \textbf{} & \textbf{Cenário 1} & \textbf{Cenário 2} & \textbf{Cenário 3} & \textbf{Cenário 4} \\
         \midrule
-        \textbf{1} & \colorbox{green!25}{0.81} & 0.65 & 0.06 & 0.11 & 0.05 \\ 
-        \textbf{2} & \colorbox{red!25}{0.65} & 0.66 & 0.73 & 0.69 & 0.40 \\ 
-        \textbf{3} & 0.81 & 0.80 & 0.96 & 0.87 & 0.77 \\ 
-        \textbf{4} & 0.83 & 0.85 & 0.86 & 0.86 & 0.75 \\ 
+        \textbf{Experimento 01}  & 0.81 & 0.76 & 0.81 & 0.83 \\ 
+        \textbf{Experimento 02}  & 0.65 & 0.79 & \colorbox{green!25}{0.87}\footnote{U-NET com função de custo de entropia cruzada e pesos ponderados. Sem aumento de dados} & \colorbox{green!25}{0.87}\footnote{U-NET com função de custo \textit{Focal Loss}. Com aumento de dados} \\
         \bottomrule
         \addlinespace
     \end{tabular}
     \source{Autoria própria.}%% Fonte
 \end{table}
 
+\textcolor{gray!25}{
+\begin{table}[!ht]
+    \centering
+    \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+    \mode<article>{\small}%% Modo artigo: tamanho de fonte
+    % \caption{Comparativo de IoU dos experimentos em cada cenário.}%% Legenda
+    % \label{tab:res:iou}%% Rótulo
+    \begin{tabular}{lrrrr}
+    \toprule
+        \textbf{} & \textbf{Cenário 1} & \textbf{Cenário 2} & \textbf{Cenário 3} & \textbf{Cenário 4} \\
+        \midrule
+        \textbf{Experimento 01}  & 0.48 & 0.40 & 0.65 & 0.58 \\ 
+        \textbf{Experimento 02}  & 0.40 & 0.62 & \colorbox{green!25}{0.72} & \colorbox{green!25}{0.71} \\
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \source{Autoria própria.}%% Fonte
+\end{table}}
+
 \end{frame}
 
-% Crie um frame com uma tabela comparativa entre os quatro cenários de experimentos. A tabela deve conter os seguintes dados: acurácia, precisão, sensibilidade, F1-Score e IoU. A tabela deve ser criada com base nos r
-% esultados obtidos
+\begin{frame}
+    \setcounter{footnote}{0}
+    \framesubtitle{Comparação dos Resultados - IoU}
+    
+    \textcolor{gray!25}{
+    \begin{table}[!ht]
+        \centering
+        \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+        \mode<article>{\small}%% Modo artigo: tamanho de fonte
+        % \caption{Comparativo de acurária dos experimentos em cada cenário.}%% Legenda
+        % \label{tab:res:acuracia}%% Rótulo
+        \begin{tabular}{lrrrr}
+        \toprule
+            \textbf{} & \textbf{Cenário 1} & \textbf{Cenário 2} & \textbf{Cenário 3} & \textbf{Cenário 4} \\
+            \midrule
+            \textbf{Experimento 01}  & 0.81 & 0.76 & 0.81 & 0.83 \\ 
+            \textbf{Experimento 02}  & 0.65 & 0.79 & \colorbox{green!25}{0.87} & \colorbox{green!25}{0.87} \\
+            \bottomrule
+            \addlinespace
+        \end{tabular}
+        \source{Autoria própria.}%% Fonte
+    \end{table}}
+    
+    \begin{table}[!ht]
+        \centering
+        \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
+        \mode<article>{\small}%% Modo artigo: tamanho de fonte
+        \caption{Comparativo de IoU dos experimentos em cada cenário.}%% Legenda
+        \label{tab:res:iou}%% Rótulo
+        \begin{tabular}{lrrrr}
+        \toprule
+            \textbf{} & \textbf{Cenário 1} & \textbf{Cenário 2} & \textbf{Cenário 3} & \textbf{Cenário 4} \\
+            \midrule
+            \textbf{Experimento 01}  & 0.48 & 0.40 & 0.65 & 0.58 \\ 
+            \textbf{Experimento 02}  & 0.40 & 0.62 & \colorbox{green!25}{0.72}\footnote{U-NET com função de custo de entropia cruzada e pesos ponderados. Sem aumento de dados} & \colorbox{green!25}{0.71}\footnote{U-NET com função de custo \textit{Focal Loss}. Com aumento de dados} \\
+            \bottomrule
+            \addlinespace
+        \end{tabular}
+        \source{Autoria própria.}%% Fonte
+    \end{table}
+    
+\end{frame}
 
+\begin{frame}
+\setcounter{footnote}{0}
+\framesubtitle{Comparação dos Resultados - Medida $f$}
+
+\begin{table}[!ht]
+    \caption{Resultados da medida $f$ dos experimentos nos melhores cenários}%% Legenda
+    \centering
+    \begin{tabular}{lllll}
+    \toprule
+        \multirow{2}{*}{\textbf{Classe}} & \multicolumn{2}{c}{\textbf{Cenário 3}} & \multicolumn{2}{c}{\textbf{Cenário 4}} \\ 
+        \cline{2-5} & Exp 1 & Exp 2\footnote{U-NET com função de custo de entropia cruzada e pesos ponderados. Sem aumento de dados} & Exp 1 & Exp 2\footnote{U-NET com função de custo \textit{Focal Loss}. Com aumento de dados} \\
+        \midrule
+        \textbf{Área Desenvolvida}          & 0.85 & \colorbox{green!25}{0.88} & 0.86 & \colorbox{green!25}{0.88} \\
+        \textbf{Floresta}                   & 0.87 & \colorbox{green!25}{0.91} & 0.89 & \colorbox{green!25}{0.91} \\
+        \textbf{Sombra}                     & 0.79 & \colorbox{green!25}{0.85} & 0.81 & \colorbox{green!25}{0.84} \\
+        \textbf{Área em Regeneração}        & 0.73 & \colorbox{green!25}{0.85} & 0.81 & \colorbox{green!25}{0.84} \\
+        \textbf{Agricultura}                & 0.87 & \colorbox{green!25}{0.90} & 0.85 & \colorbox{green!25}{0.89} \\
+        \textbf{Rocha}                      & 0.66 & \colorbox{green!25}{0.75} & 0.57 & \colorbox{green!25}{0.74} \\
+        \textbf{Solo Exposto}               & 0.43 & \colorbox{green!25}{0.52} & 0.31 & \colorbox{green!25}{0.49} \\
+        \textbf{Água}                       & \colorbox{green!25}{0.95} & 0.93 & 0.60 & \colorbox{green!25}{0.94} \\ 
+        \bottomrule
+        \addlinespace
+    \end{tabular}
+    \label{tab:res:fscore:classe}%% Rótulo
+    \source{Autoria própria.}%% Fonte
+\end{table}
+
+\end{frame}
+
+\begin{frame}
+    \setcounter{footnote}{0}
+    \framesubtitle{Comparação dos Resultados - Medida $IoU$}
+    
+    \begin{table}[!ht]
+        \caption{Resultados da medida $IoU$ dos experimentos nos melhores cenários}%% Legenda
+        \centering
+        \begin{tabular}{lllll}
+        \toprule
+            \multirow{2}{*}{\textbf{Classe}} & \multicolumn{2}{c}{\textbf{Cenário 3}} & \multicolumn{2}{c}{\textbf{Cenário 4}} \\ 
+            \cline{2-5} & Exp 1 & Exp 2\footnote{U-NET com função de custo de entropia cruzada e pesos ponderados. Sem aumento de dados} & Exp 1 & Exp 2\footnote{U-NET com função de custo \textit{Focal Loss}. Com aumento de dados} \\
+            \midrule
+            \textbf{Área Desenvolvida}          & 0.73 & \colorbox{green!25}{0.79} & 0.75 & \colorbox{green!25}{0.79} \\ 
+            \textbf{Floresta}                   & 0.77 & \colorbox{green!25}{0.83} & 0.81 & \colorbox{green!25}{0.83} \\ 
+            \textbf{Sombra}                     & 0.65 & \colorbox{green!25}{0.73} & 0.68 & \colorbox{green!25}{0.73} \\ 
+            \textbf{Área em Regeneração}        & 0.58 & \colorbox{green!25}{0.74} & 0.68 & \colorbox{green!25}{0.72} \\ 
+            \textbf{Agricultura}                & 0.77 & \colorbox{green!25}{0.82} & 0.74 & \colorbox{green!25}{0.81} \\ 
+            \textbf{Rocha}                      & 0.49 & \colorbox{green!25}{0.60} & 0.40 & \colorbox{green!25}{0.58} \\ 
+            \textbf{Solo Exposto}               & 0.28 & \colorbox{green!25}{0.35} & 0.18 & \colorbox{green!25}{0.32} \\ 
+            \textbf{Água}                       & \colorbox{green!25}{0.90} & 0.86 & 0.42 & \colorbox{green!25}{0.88} \\ 
+            \bottomrule
+            \addlinespace
+        \end{tabular}
+        \label{tab:res:iou:classe}%% Rótulo
+        \source{Autoria própria.}%% Fonte
+    \end{table}
+    
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Comparação dos Resultados - Análise Visual}
+
+\begin{figure}[htp]%% Ambiente figure
+    \centering
+    \parbox{6cm}{
+        \mode<presentation>{\includegraphics[width = 5cm]{./Figuras/cm/comparativo_01-min}}%% Modo apresentação: tamanho da figura
+        \mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/cm/comparativo_01-min}}%% Modo artigo: tamanho da figura
+        \caption{Comparativo entre as Imagens do Conjunto de Teste}
+        \label{fig:res:comparativo1}}
+    \qquad
+        \begin{minipage}{6cm}
+            \includegraphics[width=4cm]{Figuras/legenda}
+            \caption{Legenda}
+            \label{fig:res:legenda1}
+        \end{minipage}
+    \source{Autoria própria.}%% Fonte
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \framesubtitle{Comparação dos Resultados - Análise Visual}
+    
+    \begin{figure}[htp]%% Ambiente figure
+        \centering
+        \parbox{6cm}{
+            \mode<presentation>{\includegraphics[width=5cm]{./Figuras/cm/comparativo_02-min}}%% Modo apresentação: tamanho da figura
+        \mode<article>{\includegraphics[width = 0.2\columnwidth]{./Figuras/cm/comparativo_02-min}}%% Modo artigo: tamanho da figura
+            \caption{Comparativo entre as Imagens do Conjunto de Teste}
+            \label{fig:res:comparativo2}}
+        \qquad
+            \begin{minipage}{6cm}
+                \includegraphics[width=4cm]{Figuras/legenda}
+                \caption{Legenda}
+                \label{fig:res:legenda2}
+            \end{minipage}
+        \source{Autoria própria.}%% Fonte
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}
+\framesubtitle{Comparação com trabalhos relacionados}
+\begin{columns}[T]
+
+\column{0.5\linewidth}
+    \begin{figure}[!htb]
+        \centering%
+        \caption{Resultado da segmentação semântica no conjunto de dados do Google com a arquitetura proposta.}%
+        \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/khan-01}}%% Modo apresentação: tamanho da figura
+        \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/khan-01}}%% Modo artigo: tamanho da figura
+        \source{Adaptado de \cite{Khanh2021}.}
+    \end{figure}
+
+\column{0.5\linewidth}
+
+    \begin{itemize}
+        \item Arquitetura baseada na U-NET \textit{Encoder-Decoder}.
+        \item Segmentação semântica usando imagens de satélite de alta resolução do Google Earth.
+        \item Anotação manual com a ferramenta CVAT \cite{cvat}.
+        \item Conjunto de dados com 13 classes.
+        \item Comparação do resultado com diferentes funções de custo (EfficientNet-B0)
+        \item Não apresentaram métricas de avaliação.
+    \end{itemize}
+
+\end{columns}
+\end{frame}
 
 \section{Conclusões}\label{sec:concl}
 
-\subsection{Descrição das Conclusões Obtidas}\label{ssec:concl1}
+\subsection{Considerações finais}\label{ssec:concl1}
 
 \begin{frame}
-\begin{block}{Lista de conclusões}
 \begin{itemize}
-\item Conclusão 1.
-\item Conclusão 2.
-\item Conclusão 3.
-\item Conclusão 4.
-\item Conclusão 5.
+    \item Propomos uma metodologia de baixo custo.
+    \item Imagens RGB do Google Earth.
+    \item Desempenho superior da U-NET em relação à SegNet Modificada.
+    \item Tempo de treinamento e teste com a rede U-NET é menor que o da SegNet Modificada.
+    \item Aumento de performance a cada novo cenário proposto.
+    \item Junção da classe \textbf{Piscina} com a classe \textbf{Área Desenvolvida} a partir do cenário 2.
 \end{itemize}
-\end{block}
+\end{frame}
+
+\section{Conclusões}\label{sec:concl}
+
+\subsection{Trabalhos futuros}\label{ssec:concl1}
+
+\begin{frame}
+\begin{itemize}
+    \item Ampliar o conjunto de dados.
+    \item Utilizar técnicas de pós-processamento para melhorar a segmentação.
+    \item Contribuir no mapeamento do uso e cobertura da terra em áreas de proteção ambiental.
+\end{itemize}
 \end{frame}
 
 \mode<presentation>{%% Modo apresentação: referências
@@ -1400,28 +1595,38 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
 
 \section{Agradecimentos}\label{sec:agrad}
 
-\respnotice[Declaração de Responsabilidade]{O(s) autor(es) é(são) o(s) único(s) responsável(eis) pelas informações contidas neste documento.}
-
 \begin{frame}{}{\mode<presentation>{~}}
-Às organizações de fomento, pelo apoio recebido para o desenvolvimento deste trabalho e a participação neste evento:
-\begin{center}
-\includegraphics[height = 10mm]{./Logos/apoio-capes}
-\hfill%
-\includegraphics[height = 10mm]{./Logos/apoio-cnpq}
-\hfill%
-\includegraphics[height = 10mm]{./Logos/apoio-fa-gov-pr}
-\hfill%
-\includegraphics[height = 10mm]{./Logos/utfpr}
-\end{center}
-\mode<presentation>{%% Modo apresentação: agradecimentos e declaração de responsabilidade
-  Aos presentes, pela atenção\sfootnote[frame]{\faStickyNoteO~\textbf{\respnoticetitle:}\space\MakeLowercase{\respnoticetext}}.%
-}
+    \begin{minipage}[c][\textheight][c]{\textwidth}
+        \centering
+        \title{REDES NEURAIS CONVOLUCIONAIS NA SEGMENTAÇÃO SEMÂNTICA DE IMAGENS AÉREAS PARA O MAPEAMENTO DA COBERTURA DA TERRA EM ÁREAS DE PROTEÇÃO AMBIENTAL}
+        \author{Fabricio Bizotto}
+        \date{\today}
+        \maketitle
+    \end{minipage}
 \end{frame}
 
-\mode<article>{%% Modo artigo: declaração de responsabilidade
-  \section{\respnoticetitle}\label{sec:declar}%
-  \respnoticetext%
-}
+% \respnotice[Declaração de Responsabilidade]{O(s) autor(es) é(são) o(s) único(s) responsável(eis) pelas informações contidas neste documento.}
+
+% \begin{frame}{}{\mode<presentation>{~}}
+% Às organizações de fomento, pelo apoio recebido para o desenvolvimento deste trabalho e a participação neste evento:
+% \begin{center}
+% \includegraphics[height = 10mm]{./Logos/apoio-capes}
+% \hfill%
+% \includegraphics[height = 10mm]{./Logos/apoio-cnpq}
+% \hfill%
+% \includegraphics[height = 10mm]{./Logos/apoio-fa-gov-pr}
+% \hfill%
+% \includegraphics[height = 10mm]{./Logos/utfpr}
+% \end{center}
+% \mode<presentation>{%% Modo apresentação: agradecimentos e declaração de responsabilidade
+%   Aos presentes, pela atenção\sfootnote[frame]{\faStickyNoteO~\textbf{\respnoticetitle:}\space\MakeLowercase{\respnoticetext}}.%
+% }
+% \end{frame}
+
+% \mode<article>{%% Modo artigo: declaração de responsabilidade
+%   \section{\respnoticetitle}\label{sec:declar}%
+%   \respnoticetext%
+% }
 
 %% Fim do documento
 \end{document}
