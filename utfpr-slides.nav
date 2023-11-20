@@ -11,142 +11,136 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{2}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{0}{3}{6/6}{}{0}}
+\headcommand {\beamer@subsectionpages {4}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{6}{Objetivo Geral}}
+\headcommand {\slideentry {1}{1}{1}{6/6}{Objetivo Geral}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionpages {4}{6}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{7}{Objetivo Geral}}
-\headcommand {\slideentry {1}{1}{1}{7/7}{Objetivo Geral}{0}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{7}{Objetivos Específicos}}
+\headcommand {\slideentry {1}{2}{1}{7/7}{Objetivos Específicos}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{8}{Objetivos Específicos}}
-\headcommand {\slideentry {1}{2}{1}{8/8}{Objetivos Específicos}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{8}{Trabalhos Relacionados}}
+\headcommand {\slideentry {1}{3}{1}{8/8}{Trabalhos Relacionados}{0}}
 \headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {4}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{9}{Trabalhos Relacionados}}
-\headcommand {\slideentry {1}{3}{1}{9/9}{Trabalhos Relacionados}{0}}
+\headcommand {\sectionentry {2}{Material e Métodos}{9}{Material e Métodos}{0}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Metodologia Proposta}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{Metodologia Proposta}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{3}{2}{10/10}{Trabalhos Relacionados}{0}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{Estudos sobre a APA-Petrópolis}}
+\headcommand {\slideentry {2}{2}{1}{10/10}{Estudos sobre a APA-Petrópolis}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{3}{3}{11/11}{Trabalhos Relacionados}{0}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{11}{Configuração do ambiente de Trabalho}}
+\headcommand {\slideentry {2}{3}{1}{11/11}{Configuração do ambiente de Trabalho}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@sectionpages {4}{11}}
-\headcommand {\beamer@subsectionpages {9}{11}}
-\headcommand {\sectionentry {2}{Material e Métodos}{12}{Material e Métodos}{0}}
-\headcommand {\beamer@subsectionpages {12}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{12}{Metodologia Proposta}}
-\headcommand {\slideentry {2}{1}{1}{12/12}{Metodologia Proposta}{0}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{12}{Aquisição do Conjunto de Dados}}
+\headcommand {\slideentry {2}{4}{1}{12/12}{Aquisição do Conjunto de Dados}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{13}{Estudos sobre a APA-Petrópolis}}
-\headcommand {\slideentry {2}{2}{1}{13/13}{Estudos sobre a APA-Petrópolis}{0}}
+\headcommand {\slideentry {2}{4}{2}{13/13}{Aquisição do Conjunto de Dados}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Configuração do ambiente de Trabalho}}
-\headcommand {\slideentry {2}{3}{1}{14/14}{Configuração do ambiente de Trabalho}{0}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{14}{Seleção e Rotulagem}}
+\headcommand {\slideentry {2}{5}{1}{14/14}{Seleção e Rotulagem}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{15}{Aquisição do Conjunto de Dados}}
-\headcommand {\slideentry {2}{4}{1}{15/15}{Aquisição do Conjunto de Dados}{0}}
+\headcommand {\slideentry {2}{5}{2}{15/15}{Seleção e Rotulagem}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{4}{2}{16/16}{Aquisição do Conjunto de Dados}{0}}
+\headcommand {\slideentry {2}{5}{3}{16/16}{Seleção e Rotulagem}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\beamer@subsectionentry {0}{2}{5}{17}{Seleção e Rotulagem}}
-\headcommand {\slideentry {2}{5}{1}{17/17}{Seleção e Rotulagem}{0}}
+\headcommand {\beamer@subsectionpages {14}{16}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{17}{Implementação e Adaptações na Rede SegNet e U-NET}}
+\headcommand {\slideentry {2}{6}{1}{17/17}{Implementação e Adaptações na Rede SegNet e U-NET}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {2}{5}{2}{18/18}{Seleção e Rotulagem}{0}}
+\headcommand {\slideentry {2}{6}{2}{18/18}{Implementação e Adaptações na Rede SegNet e U-NET}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {2}{5}{3}{19/19}{Seleção e Rotulagem}{0}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{19}{Treinamento e Teste}}
+\headcommand {\slideentry {2}{7}{1}{19/19}{Treinamento e Teste}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionpages {17}{19}}
-\headcommand {\beamer@subsectionentry {0}{2}{6}{20}{Implementação e Adaptações na Rede SegNet e U-NET}}
-\headcommand {\slideentry {2}{6}{1}{20/20}{Implementação e Adaptações na Rede SegNet e U-NET}{0}}
+\headcommand {\slideentry {2}{7}{2}{20/20}{Treinamento e Teste}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {2}{6}{2}{21/21}{Implementação e Adaptações na Rede SegNet e U-NET}{0}}
+\headcommand {\slideentry {2}{7}{3}{21/21}{Treinamento e Teste}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@subsectionpages {20}{21}}
-\headcommand {\beamer@subsectionentry {0}{2}{7}{22}{Treinamento e Teste}}
-\headcommand {\slideentry {2}{7}{1}{22/22}{Treinamento e Teste}{0}}
+\headcommand {\slideentry {2}{7}{4}{22/22}{Treinamento e Teste}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {2}{7}{2}{23/23}{Treinamento e Teste}{0}}
+\headcommand {\beamer@sectionpages {9}{22}}
+\headcommand {\beamer@subsectionpages {19}{22}}
+\headcommand {\sectionentry {3}{Resultados e Discussão}{23}{Resultados e Discussão}{0}}
+\headcommand {\beamer@subsectionpages {23}{22}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{23}{Cenários}}
+\headcommand {\slideentry {3}{1}{1}{23/23}{Cenários}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {2}{7}{3}{24/24}{Treinamento e Teste}{0}}
+\headcommand {\slideentry {3}{1}{2}{24/24}{Cenários}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {2}{7}{4}{25/25}{Treinamento e Teste}{0}}
+\headcommand {\slideentry {3}{1}{3}{25/25}{Cenários}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\beamer@sectionpages {12}{25}}
-\headcommand {\beamer@subsectionpages {22}{25}}
-\headcommand {\sectionentry {3}{Resultados e Discussão}{26}{Resultados e Discussão}{0}}
-\headcommand {\beamer@subsectionpages {26}{25}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{26}{Cenários}}
-\headcommand {\slideentry {3}{1}{1}{26/26}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{4}{26/26}{Cenários}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {3}{1}{2}{27/27}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{5}{27/27}{Cenários}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {3}{1}{3}{28/28}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{6}{28/28}{Cenários}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{1}{4}{29/29}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{7}{29/29}{Cenários}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {3}{1}{5}{30/30}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{8}{30/30}{Cenários}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{1}{6}{31/31}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{9}{31/31}{Cenários}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{1}{7}{32/32}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{10}{32/32}{Cenários}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {3}{1}{8}{33/33}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{11}{33/33}{Cenários}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {3}{1}{9}{34/34}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{12}{34/34}{Cenários}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {3}{1}{10}{35/35}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{13}{35/35}{Cenários}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{1}{11}{36/36}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{14}{36/36}{Cenários}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{1}{12}{37/37}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{15}{37/37}{Cenários}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{1}{13}{38/38}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{16}{38/38}{Cenários}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{1}{14}{39/39}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{17}{39/39}{Cenários}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{1}{15}{40/40}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{18}{40/40}{Cenários}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {3}{1}{16}{41/41}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{19}{41/41}{Cenários}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{1}{17}{42/42}{Cenários}{0}}
+\headcommand {\slideentry {3}{1}{20}{42/42}{Cenários}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{1}{18}{43/43}{Cenários}{0}}
+\headcommand {\beamer@sectionpages {23}{42}}
+\headcommand {\beamer@subsectionpages {23}{42}}
+\headcommand {\sectionentry {4}{Conclusões}{43}{Conclusões}{0}}
+\headcommand {\beamer@subsectionpages {43}{42}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{43}{Considerações finais}}
+\headcommand {\slideentry {4}{1}{1}{43/43}{Considerações finais}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {3}{1}{19}{44/44}{Cenários}{0}}
+\headcommand {\beamer@sectionpages {43}{43}}
+\headcommand {\beamer@subsectionpages {43}{43}}
+\headcommand {\sectionentry {5}{Conclusões}{44}{Conclusões}{0}}
+\headcommand {\beamer@subsectionpages {44}{43}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{44}{Trabalhos futuros}}
+\headcommand {\slideentry {5}{1}{1}{44/44}{Trabalhos futuros}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {3}{1}{20}{45/45}{Cenários}{0}}
+\headcommand {\beamer@sectionpages {44}{44}}
+\headcommand {\beamer@subsectionpages {44}{44}}
+\headcommand {\sectionentry {6}{Refer\^encias}{45}{Refer\^encias}{0}}
+\headcommand {\slideentry {6}{0}{1}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\beamer@sectionpages {26}{45}}
-\headcommand {\beamer@subsectionpages {26}{45}}
-\headcommand {\sectionentry {4}{Conclusões}{46}{Conclusões}{0}}
-\headcommand {\beamer@subsectionpages {46}{45}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{46}{Considerações finais}}
-\headcommand {\slideentry {4}{1}{1}{46/46}{Considerações finais}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@sectionpages {46}{46}}
-\headcommand {\beamer@subsectionpages {46}{46}}
-\headcommand {\sectionentry {5}{Conclusões}{47}{Conclusões}{0}}
-\headcommand {\beamer@subsectionpages {47}{46}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{47}{Trabalhos futuros}}
-\headcommand {\slideentry {5}{1}{1}{47/47}{Trabalhos futuros}{0}}
+\headcommand {\slideentry {6}{0}{1}{45/46}{}{0}}
+\headcommand {\beamer@framepages {45}{46}}
+\headcommand {\beamer@sectionpages {45}{46}}
+\headcommand {\beamer@subsectionpages {45}{46}}
+\headcommand {\sectionentry {7}{Agradecimentos}{47}{Agradecimentos}{0}}
+\headcommand {\slideentry {7}{0}{1}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@sectionpages {47}{47}}
+\headcommand {\beamer@partpages {1}{47}}
 \headcommand {\beamer@subsectionpages {47}{47}}
-\headcommand {\sectionentry {6}{Refer\^encias}{48}{Refer\^encias}{0}}
-\headcommand {\slideentry {6}{0}{1}{48/48}{}{0}}
-\headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {6}{0}{1}{48/49}{}{0}}
-\headcommand {\beamer@framepages {48}{49}}
-\headcommand {\beamer@sectionpages {48}{49}}
-\headcommand {\beamer@subsectionpages {48}{49}}
-\headcommand {\sectionentry {7}{Agradecimentos}{50}{Agradecimentos}{0}}
-\headcommand {\slideentry {7}{0}{1}{50/50}{}{0}}
-\headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@partpages {1}{50}}
-\headcommand {\beamer@subsectionpages {50}{50}}
-\headcommand {\beamer@sectionpages {50}{50}}
-\headcommand {\beamer@documentpages {50}}
-\headcommand {\gdef \inserttotalframenumber {50}}
+\headcommand {\beamer@sectionpages {47}{47}}
+\headcommand {\beamer@documentpages {47}}
+\headcommand {\gdef \inserttotalframenumber {47}}

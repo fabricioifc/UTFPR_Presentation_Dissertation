@@ -178,37 +178,37 @@
     \end{block}
 \end{frame}
 
-\begin{frame}
-\begin{columns}[T]
+% \begin{frame}
+% \begin{columns}[T]
 
-\column{0.5\textwidth}
-A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do Rio de Janeiro.
-\begin{figure}[!htb]
-\centering%
-\caption{APA-Petrópolis.}%
-\label{fig:apa}
-\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apa}}%% Modo artigo: tamanho da figura
-\source{\textcite{Google Earth, 2023}.}
-\end{figure}
-\column{0.5\textwidth}
-\mode<article>{\par}%% Modo artigo: quebra de parágrafo
-\begin{block}{APA-Petrópolis}
-\begin{itemize}
-\item $\approx$ 60.000 hectares
-\item Ações de conservação realizadas pelo ICMBio:
-\begin{itemize}
-    \item Monitoramento Ambiental
-    \item Manutenção de trilhas ecológicas
-    \item Recuperação de áreas degradadas
-    \item Combate a incêndios
-    \item Proteção de espécies ameaçadas de extinção
-    \item Invasão de terras
-\end{itemize}
-\end{itemize}
-\end{block}
-\end{columns}
-\end{frame}
+% \column{0.5\textwidth}
+% A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do Rio de Janeiro.
+% \begin{figure}[!htb]
+% \centering%
+% \caption{APA-Petrópolis.}%
+% % \label{fig:apa}
+% \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa}}%% Modo apresentação: tamanho da figura
+% \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apa}}%% Modo artigo: tamanho da figura
+% \source{\cite{GE2023}.}
+% \end{figure}
+% \column{0.5\textwidth}
+% \mode<article>{\par}%% Modo artigo: quebra de parágrafo
+% \begin{block}{APA-Petrópolis}
+% \begin{itemize}
+% \item $\approx$ 60.000 hectares
+% \item Ações de conservação realizadas pelo ICMBio:
+% \begin{itemize}
+%     \item Monitoramento Ambiental
+%     \item Manutenção de trilhas ecológicas
+%     \item Recuperação de áreas degradadas
+%     \item Combate a incêndios
+%     \item Proteção de espécies ameaçadas de extinção
+%     \item Invasão de terras
+% \end{itemize}
+% \end{itemize}
+% \end{block}
+% \end{columns}
+% \end{frame}
 
 % \begin{frame}{Introdução}
 % \begin{itemize}
@@ -238,13 +238,13 @@ A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do R
         \item Estudos começam a exploraram a aplicação das Redes Neurais Convolucionais (RNC) na análise da cobertura da terra com resultados promissores \cite{HU et al., 2013), (LI et al., 2020}.
     \end{itemize}
 
-    \begin{block}{Possibilidades}
-        \begin{itemize}
-            \item Imagens de satélite disponíveis gratuitamente
-            \item VANT (Veículo Aéreo não Tripulado) (custo alto)
-            \item Imagens Aéreas RGB da plataforma Google Earth
-        \end{itemize}
-    \end{block}
+    % \begin{block}{Possibilidades}
+    %     \begin{itemize}
+    %         \item Imagens de satélite disponíveis gratuitamente
+    %         \item VANT (Veículo Aéreo não Tripulado) (custo alto)
+    %         \item Imagens Aéreas RGB da plataforma Google Earth
+    %     \end{itemize}
+    % \end{block}
 
 \end{frame}
 
@@ -291,7 +291,7 @@ de dados.
 
 \begin{frame}
     % 1. Construção de mapas digitais a partir de imagens de satélite, utilizando a arquitetura U-Net com EfficientNet-B0 como codificador e decodificador \textbf{\cite{Khanh2021}}.
-    1.  Construção de mapas digitais a partir de imagens aéreas do Google, usando a arquitetura EfficientNet-B0 como codificador para extrair as características geográficas e U-Net como decodificador para reconstruir o mapa de características.
+    1.  Construção de mapas digitais a partir de imagens aéreas do Google, usando a arquitetura EfficientNet-B0 como codificador para extrair as características geográficas e U-Net como decodificador para reconstruir o mapa de características\textbf{\cite{Khanh2021}}.
     \begin{figure}[!htb]
         \centering%
         \caption{Resultado da segmentação semântica no conjunto de dados do Google com a arquitetura proposta.}%
@@ -303,31 +303,31 @@ de dados.
     
 \end{frame}
 
-\begin{frame}
-    2. Aplicação de RNC, na tarefa de segmentação semântica de imagens obtidas por sensoriamento remoto. Duas arquiteturas de RNC, SegNet e U-net, são aprimoradas por meio da introdução de \textit{index pooling} para melhorar essas arquiteturas, permitindo a preservação de informações espaciais cruciais durante a ampliação da resolução. \textbf{\cite{Alam2021}}.
-    \begin{figure}[!htb]
-        \centering%
-        \caption{Resultado da segmentação semântica.}%
-        \label{fig:alam2021}
-        \mode<presentation>{\includegraphics[width = 0.6\columnwidth]{./Figuras/Alam2021}}%% Modo apresentação: tamanho da figura
-        \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/Alam2021}}%% Modo artigo: tamanho da figura
-        \source{Adaptado de \cite{Alam2021}.}
-    \end{figure}
+% \begin{frame}
+%     2. Aplicação de RNC, na tarefa de segmentação semântica de imagens obtidas por sensoriamento remoto. Duas arquiteturas de RNC, SegNet e U-net, são aprimoradas por meio da introdução de \textit{index pooling} para melhorar essas arquiteturas, permitindo a preservação de informações espaciais cruciais durante a ampliação da resolução. \textbf{\cite{Alam2021}}.
+%     \begin{figure}[!htb]
+%         \centering%
+%         \caption{Resultado da segmentação semântica.}%
+%         \label{fig:alam2021}
+%         \mode<presentation>{\includegraphics[width = 0.6\columnwidth]{./Figuras/Alam2021}}%% Modo apresentação: tamanho da figura
+%         \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/Alam2021}}%% Modo artigo: tamanho da figura
+%         \source{Adaptado de \cite{Alam2021}.}
+%     \end{figure}
     
-\end{frame}
+% \end{frame}
 
-\begin{frame}
-    3. Arquitetura U-Net para segmentar estufas agrícolas de plástico em imagens de sensoriamento remoto de alta resolução. A abordagem foi dividida em três etapas: coleta e anotação de imagens, treinamento da rede U-Net e pós-processamento para remover elementos confundíveis com as estufas \textbf{\cite{Chen2021}}.
-    \begin{figure}[!htb]
-        \centering%
-        \caption{Dificuldade em extrair estufas densamente distribuidas.}%
-        \label{fig:alam2021}
-        \mode<presentation>{\includegraphics[width = 0.6\columnwidth]{./Figuras/apg}}%% Modo apresentação: tamanho da figura
-        \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apg}}%% Modo artigo: tamanho da figura
-        \source{\cite{Chen2021}.}
-    \end{figure}
+% \begin{frame}
+%     3. Arquitetura U-Net para segmentar estufas agrícolas de plástico em imagens de sensoriamento remoto de alta resolução. A abordagem foi dividida em três etapas: coleta e anotação de imagens, treinamento da rede U-Net e pós-processamento para remover elementos confundíveis com as estufas \textbf{\cite{Chen2021}}.
+%     \begin{figure}[!htb]
+%         \centering%
+%         \caption{Dificuldade em extrair estufas densamente distribuidas.}%
+%         \label{fig:alam2021}
+%         \mode<presentation>{\includegraphics[width = 0.6\columnwidth]{./Figuras/apg}}%% Modo apresentação: tamanho da figura
+%         \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apg}}%% Modo artigo: tamanho da figura
+%         \source{\cite{Chen2021}.}
+%     \end{figure}
     
-\end{frame}
+% \end{frame}
 
 % \section{Revisão da Literatura}\label{sec:revlit}
 
@@ -390,21 +390,40 @@ A Fig.~\ref{fig:metodologia} apresenta a metodologia utilizada para a realizaç�
 
 \begin{frame}
 \begin{columns}[T]
+
 \column{0.5\textwidth}
+% \begin{itemize}
+%     \item $\approx$ 60.000 hectares (5,69\%) da Mata Atlântica.
+%     \item Região urbanizada.
+%     \item Plano de manejo que define ações e restrições.
+%     \item Petrópolis e municípios adjacentes.
+% \end{itemize}
+
 \begin{itemize}
-    \item $\approx$ 60.000 hectares (5,69\%) da Mata Atlântica.
+    \item $\approx$ 68.000 hectares.% (5,69\%) da Mata Atlântica.
     \item Região urbanizada.
     \item Plano de manejo que define ações e restrições.
     \item Petrópolis e municípios adjacentes.
+    \item Ações de conservação realizadas pelo ICMBio:
+    \begin{itemize}
+        \item Monitoramento Ambiental
+        \item Manutenção de trilhas ecológicas
+        \item Recuperação de áreas degradadas
+        \item Combate a incêndios
+        \item Proteção de espécies ameaçadas de extinção
+        \item Invasão de terras
+    \end{itemize}
 \end{itemize}
+
 \column{0.5\textwidth}
+A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do Rio de Janeiro.
 \begin{figure}[!htb]
 \centering%
 \caption{APA-Petrópolis.}%
-% \label{fig:apa}
-\mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/apa}}%% Modo artigo: tamanho da figura
-\source{Adaptado de \textcite{Google Earth, 2023}.}
+\label{fig:apa}
+\mode<presentation>{\includegraphics[width = 1.0\columnwidth]{./Figuras/apa-min}}%% Modo apresentação: tamanho da figura
+\mode<article>{\includegraphics[width = 0.8\columnwidth]{./Figuras/apa-min}}%% Modo artigo: tamanho da figura
+\source{Adaptado de \cite{GE2023}.}
 \end{figure}
 \end{columns}
 \end{frame}
@@ -460,7 +479,7 @@ ArcGis Pro (parceria com UFMS)           & \cite{Arcgis}                \\
 \label{fig:obter_imagens}
 \mode<presentation>{\includegraphics[width = 0.6\columnwidth]{./Figuras/obter_imagens-min}}%% Modo apresentação: tamanho da figura
 \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/obter_imagens-min}}%% Modo artigo: tamanho da figura
-\source{Adaptado de \textcite{Google Earth, 2023}.}
+\source{Adaptado de \cite{GE2023}.}
 \end{figure}
 \end{frame}
 
@@ -500,7 +519,7 @@ Total                   & 322 \\
 \label{fig:obter_imagens}
 \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/amostras-min}}%% Modo apresentação: tamanho da figura
 \mode<article>{\includegraphics[width = 0.6\columnwidth]{./Figuras/amostras-min}}%% Modo artigo: tamanho da figura
-\source{Adaptado de \textcite{Google Earth, 2023}.}
+\source{Adaptado de \cite{GE2023}.}
 \end{figure}
 \end{columns}
 \end{frame}
@@ -534,7 +553,7 @@ Total                   & 322 \\
 \label{fig:obter_imagens}
 \mode<presentation>{\includegraphics[width = 1.0\columnwidth]{./Figuras/amostras_classe-min}}%% Modo apresentação: tamanho da figura
 \mode<article>{\includegraphics[width = 0.8\columnwidth]{./Figuras/amostras_classe-min}}%% Modo artigo: tamanho da figura
-\source{Adaptado de \textcite{Google Earth, 2023}.}
+\source{Adaptado de \textcite{GE2023}.}
 \end{figure}
 \end{columns}
 \end{frame}
@@ -618,7 +637,7 @@ em que $m$ é o número de pixels de todas as imagens de treinamento, $C$ é o n
 \begin{frame}
 
 \begin{itemize}
-    \item \textbf{MPSegnet} proposta por \textcite{SOUZA BRITO et al., 2021}
+    \item \textbf{MPSegnet} proposta por \textbf{\textcite{Andre2021}}
     \item Uma nova estratégia de multi-pooling, substituindo o max-pooling por \textit{Discrete Wavelet Transform} (DWT) e unpooling por \textit{Inverse Discrete Wavelet Transform} (IWT).
     \item Conjunto de dados utilizado nos experimentos
     \begin{itemize}
@@ -641,11 +660,11 @@ em que $m$ é o número de pixels de todas as imagens de treinamento, $C$ é o n
 \begin{frame}
 
 \begin{itemize}
-    \item \textbf{U-NET} sugerida no artigo de \textcite{Nguyen-Khanh et al. (2021)}.
-    \item Combinação de \textbf{EfficientNet-B0} \cite{EfficientNet} (ENCODER) para extração de características com \textbf{U-NET} \textcite{Ronneberger et al. (2015)} (DECODER) para reconstrução do mapa de características.
+    \item \textbf{U-NET} sugerida no artigo de \textbf{\textcite{Khanh2021}}.
+    \item Combinação de \textbf{EfficientNet-B0} \cite{EfficientNet} (ENCODER) para extração de características com \textbf{U-NET} \cite{Unet2015} (DECODER) para reconstrução do mapa de características.
     \item Conjunto de dados utilizado nos experimentos
     \begin{itemize}
-        \item Imagens Aéreas (Google Earth - GE)
+        \item Imagens Aéreas (Google Earth)
         \item RGB: 3 canais (\textit{Red-Green-Blue})
     \end{itemize}
 \end{itemize}
@@ -672,7 +691,7 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 \bottomrule
 \addlinespace
 \end{tabular*}
-\source{Adaptado de \textcite{Nguyen-Khanh et al. (2021)}.}
+\source{Adaptado de \textcite{Khanh2021}.}
 \end{table}
 
 \end{columns}
@@ -683,7 +702,7 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 \begin{frame}
 \begin{itemize}
     \item Conjunto de dados dividido em treinamento e teste (Ver Tabela \ref{tab:separacao}).
-    \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \cite{Andre2021}.
+    \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \textcite{Andre2021}.
     \item \textbf{10.000} amostras de \textbf{256x256}.
     \item Inicialização dos pesos: Pesos pré-treinados na ImageNet \cite{Imagenet2009}.
 \end{itemize}
@@ -1548,7 +1567,7 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \item Arquitetura baseada na U-NET \textit{Encoder-Decoder}.
         \item Segmentação semântica usando imagens de satélite de alta resolução do Google Earth.
         \item Anotação manual com a ferramenta CVAT \cite{cvat}.
-        \item Conjunto de dados com 13 classes.
+        \item Conjunto de dados com 12 classes.
         \item Comparação do resultado com diferentes funções de custo (EfficientNet-B0)
         \item Não apresentaram métricas de avaliação.
     \end{itemize}

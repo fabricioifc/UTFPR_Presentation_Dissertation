@@ -19,60 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Alam2021}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=05a67486caf22976335f82295c563794}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Muhammad},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=23790b1118c119eee3ba29e6a23dc592}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Jian-Feng},
-           giveni={J\bibinithyphendelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6b4dcf5173762728249b257a5c9dde06}{%
-           family={Guangpei},
-           familyi={G\bibinitperiod},
-           given={Cong},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=91ef3fe82d58b02d979a625e443de756}{%
-           family={Yunrong},
-           familyi={Y\bibinitperiod},
-           given={L\bibnamedelima V},
-           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b7ff8e5a5f0083cbccb4a4c32d3d5924}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yuanfang},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
-      \strng{fullhash}{092e0e21858b2f3b8977893d9991498b}
-      \strng{bibnamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
-      \strng{authorbibnamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
-      \strng{authornamehash}{bd0d364a6af1f26ea08c6646ac7bf14c}
-      \strng{authorfullhash}{092e0e21858b2f3b8977893d9991498b}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Mobile Networks and Applications}
-      \field{month}{2}
-      \field{number}{1}
-      \field{title}{Convolutional Neural Network for the Semantic Segmentation of Remote Sensing Images}
-      \field{volume}{26}
-      \field{year}{2021}
-      \field{pages}{200\bibrangedash 215}
-      \range{pages}{16}
-    \endentry
     \entry{Marcatto2022}{article}{}
       \name{author}{15}{}{%
         {{un=0,uniquepart=base,hash=34a316564ad344ea42ecae25e68290fd}{%
@@ -195,107 +141,33 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0303243422000162
       \endverb
     \endentry
-    \entry{Chen2021}{article}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Wei},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1b1de7b146fbb68252948480c0a75eb4}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Yameng},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3e9bdcbb8bbc1d52ef1d6e391b4b5a59}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Zhe},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=995d7bd5179e0265111934414c911ab0}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Lan},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cc617d960881076d2fb4a79fc5f5394a}{%
-           family={Pan},
-           familyi={P\bibinitperiod},
-           given={Xubin},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9dd54699b2c2473b656e16cb77363635}{%
-           family={Jia},
-           familyi={J\bibinitperiod},
-           given={Zhe},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{46dc3b07a9540484d03b9e9b392b984f}
-      \strng{fullhash}{813b1a015b5cd49a05a82100fc44593f}
-      \strng{bibnamehash}{46dc3b07a9540484d03b9e9b392b984f}
-      \strng{authorbibnamehash}{46dc3b07a9540484d03b9e9b392b984f}
-      \strng{authornamehash}{46dc3b07a9540484d03b9e9b392b984f}
-      \strng{authorfullhash}{813b1a015b5cd49a05a82100fc44593f}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0168-1699}
-      \field{journaltitle}{Computers and Electronics in Agriculture}
-      \field{title}{Mapping agricultural plastic greenhouses using Google Earth images and deep learning}
-      \field{volume}{191}
-      \field{year}{2021}
-      \field{pages}{106552}
-      \range{pages}{1}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.compag.2021.106552
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S016816992100569X
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S016816992100569X
-      \endverb
-    \endentry
     \entry{cvat}{software}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8b13d1722a467c1f743513e6b27111d1}{%
-           family={CVAT.ai},
+        {{un=0,uniquepart=base,hash=5eea355fd7f1f1fa72f68afbf1d9f7e1}{%
+           family={{CVAT.ai Corporation}},
            familyi={C\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Zenodo}%
-      }
-      \strng{namehash}{8b13d1722a467c1f743513e6b27111d1}
-      \strng{fullhash}{8b13d1722a467c1f743513e6b27111d1}
-      \strng{bibnamehash}{8b13d1722a467c1f743513e6b27111d1}
-      \strng{authorbibnamehash}{8b13d1722a467c1f743513e6b27111d1}
-      \strng{authornamehash}{8b13d1722a467c1f743513e6b27111d1}
-      \strng{authorfullhash}{8b13d1722a467c1f743513e6b27111d1}
+      \strng{namehash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
+      \strng{fullhash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
+      \strng{bibnamehash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
+      \strng{authorbibnamehash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
+      \strng{authornamehash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
+      \strng{authorfullhash}{5eea355fd7f1f1fa72f68afbf1d9f7e1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{3}
-      \field{title}{opencv/cvat: v2.4.0}
-      \field{version}{v2.4.0}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.5281/zenodo.7739965
-      \endverb
+      \field{month}{9}
+      \field{title}{{Computer Vision Annotation Tool (CVAT)}}
+      \field{version}{2.2.0}
+      \field{year}{2022}
       \verb{urlraw}
-      \verb https://doi.org/10.5281/zenodo.7739965
+      \verb https://github.com/opencv/cvat
       \endverb
       \verb{url}
-      \verb https://doi.org/10.5281/zenodo.7739965
+      \verb https://github.com/opencv/cvat
       \endverb
     \endentry
     \entry{Andre2021}{article}{}
@@ -483,6 +355,37 @@
       \verb{doi}
       \verb 10.1109/IranianCEE.2019.8786455
       \endverb
+    \endentry
+    \entry{GE2023}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {GOOGLE, INC.}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google Maps/Google Earth}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.google.com/permissions/geoguidelines/
+      \endverb
+      \verb{url}
+      \verb https://www.google.com/permissions/geoguidelines/
+      \endverb
+      \warn{\item Entry 'GE2023' (utfpr-slides.bib): Invalid format '28 fev. 2023' of date field 'urldate' - ignoring}
     \endentry
     \entry{Miniconda}{online}{}
       \name{author}{1}{}{%
@@ -769,6 +672,50 @@
       \field{title}{Automatic Differentiation in {PyTorch}}
       \field{year}{2017}
     \endentry
+    \entry{Unet2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+      \field{volume}{abs/1505.04597}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1505.04597
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1505.04597
+      \endverb
+    \endentry
     \entry{EfficientNet}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=1e7d6abb8225099acc71f672b9ec336e}{%
@@ -846,13 +793,7 @@
   \missing{(LI et al.}
   \missing{2013)}
   \missing{2020}
-  \missing{2021}
-  \missing{2023}
-  \missing{Google Earth}
   \missing{HU et al.}
-  \missing{Nguyen-Khanh et al. (2021)}
-  \missing{Ronneberger et al. (2015)}
-  \missing{SOUZA BRITO et al.}
 \endrefsection
 \endinput
 
