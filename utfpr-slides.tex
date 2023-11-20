@@ -702,8 +702,8 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 \begin{frame}
 \begin{itemize}
     \item Conjunto de dados dividido em treinamento e teste (Ver Tabela \ref{tab:separacao}).
-    \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \textcite{Andre2021}.
-    \item \textbf{10.000} amostras de \textbf{256x256}.
+    % \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \textcite{Andre2021}.
+    \item Pré-processamento: \textbf{10.000} amostras de \textbf{256x256} (recortes aleatórios).
     \item Inicialização dos pesos: Pesos pré-treinados na ImageNet \cite{Imagenet2009}.
 \end{itemize}
 
@@ -725,7 +725,7 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
     \begin{itemize}
         \item Conjunto de dados \textbf{não} é embaralhado.
         \item Sem aumento de dados.
-        \item Protocolo de janelas deslizantes com passo de 32 pixels para evitar inconsistências na segmentação, especialmente nas bordas \cite{Farhangfar2019}.
+        \item Protocolo de janelas deslizantes sobrepostas com passo de 32 pixels para evitar inconsistências na segmentação, especialmente nas bordas \cite{Farhangfar2019}.
         \item Maior esforço computacional.
     \end{itemize}
 \end{block}
