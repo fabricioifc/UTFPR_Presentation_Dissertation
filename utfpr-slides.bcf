@@ -2432,9 +2432,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">HU et al.</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">2013)</bcf:citekey>
-    <bcf:citekey order="1" intorder="3">(LI et al.</bcf:citekey>
-    <bcf:citekey order="1" intorder="4">2020</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">2013; LI et al.</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">2020</bcf:citekey>
     <bcf:citekey order="2" intorder="1">Khanh2021</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Khanh2021</bcf:citekey>
     <bcf:citekey order="4" intorder="1">GE2023</bcf:citekey>

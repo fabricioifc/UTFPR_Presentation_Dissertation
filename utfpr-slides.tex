@@ -52,6 +52,7 @@
 \usepackage{color,soul}
 \sethlcolor{yellow}
 \usepackage{multirow}
+\usepackage{colortbl}
 
 %% Arquivo de referências
 \addbibresource{utfpr-slides.bib}
@@ -159,23 +160,23 @@
 
 \begin{frame}{Introdução}
     \begin{itemize}
-        \item Área de Proteção Ambiental (APA)
+        \item \textbf{Área de Proteção Ambiental (APA):}
         \begin{itemize}
-            \item Ferramenta de Conservação da Natureza.
+            \item Ferramenta de conservação da natureza.
             \item Destinada à proteção ambiental e ao uso sustentável dos recursos naturais.
-            \item Objetivo: Conservação x Desenvolvimento Econômico.
+            \item Objetivo: Equilibrar conservação e desenvolvimento econômico.
             \item Gestão governamental, como o Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio).
             \item Regulamenta as atividades humanas de acordo com as características ambientais da região.
         \end{itemize}
-    \end{itemize}
+    \end{itemize}    
     \begin{block}{Principais desafios no monitoramento da APA}
         \begin{itemize}
-            \item Grandes equipes de trabalho especializada
-            \item Deslocamento à regiões de difícil acesso
+            \item Grandes equipes de trabalho especializadas
+            \item Deslocamento para regiões de difícil acesso
             \item Alto custo para manutenção das equipes
-            \item Perigos associados as características de fauna e flora de cada região
+            \item Perigos associados às características de fauna e flora de cada região
         \end{itemize}
-    \end{block}
+    \end{block}    
 \end{frame}
 
 % \begin{frame}
@@ -232,10 +233,10 @@
 \textbf{Sensoriamento Remoto}
 
     \begin{itemize}
-        \item Alternativa de baixo custo
-        \item Acesso a base de dados de imagens para diferentes regiões
-        \item Acesso a áreas de difícil acesso via solo
-        \item Estudos começam a exploraram a aplicação das Redes Neurais Convolucionais (RNC) na análise da cobertura da terra com resultados promissores \cite{HU et al., 2013), (LI et al., 2020}.
+        \item Alternativa de baixo custo.
+        \item Acesso a bases de dados de imagens para diferentes regiões.
+        \item Acesso a áreas de difícil acesso via solo.
+        \item Estudos começam a explorar a aplicação das Redes Neurais Convolucionais (RNC) na análise da cobertura da terra, com resultados promissores \cite{HU et al., 2013; LI et al., 2020}.
     \end{itemize}
 
     % \begin{block}{Possibilidades}
@@ -291,15 +292,17 @@ de dados.
 
 \begin{frame}
     % 1. Construção de mapas digitais a partir de imagens de satélite, utilizando a arquitetura U-Net com EfficientNet-B0 como codificador e decodificador \textbf{\cite{Khanh2021}}.
-    1.  Construção de mapas digitais a partir de imagens aéreas do Google, usando a arquitetura EfficientNet-B0 como codificador para extrair as características geográficas e U-Net como decodificador para reconstruir o mapa de características\textbf{\cite{Khanh2021}}.
+    1. Construção de mapas digitais a partir de imagens aéreas do Google, utilizando a arquitetura EfficientNet-B0 como codificador para extrair as características geográficas e a U-Net como decodificador para reconstruir o mapa de características \textbf{\cite{Khanh2021}}.
+
     \begin{figure}[!htb]
         \centering%
         \caption{Resultado da segmentação semântica no conjunto de dados do Google com a arquitetura proposta.}%
         \label{fig:khan01}
-        \mode<presentation>{\includegraphics[width = 0.8\columnwidth]{./Figuras/khan-01}}%% Modo apresentação: tamanho da figura
-        \mode<article>{\includegraphics[width = 0.4\columnwidth]{./Figuras/khan-01}}%% Modo artigo: tamanho da figura
+        \mode<presentation>{\includegraphics[width=0.8\columnwidth]{./Figuras/khan-01}}%% Modo apresentação: tamanho da figura
+        \mode<article>{\includegraphics[width=0.4\columnwidth]{./Figuras/khan-01}}%% Modo artigo: tamanho da figura
         \source{Adaptado de \cite{Khanh2021}.}
     \end{figure}
+
     
 \end{frame}
 
@@ -400,20 +403,21 @@ A Fig.~\ref{fig:metodologia} apresenta a metodologia utilizada para a realizaç�
 % \end{itemize}
 
 \begin{itemize}
-    \item $\approx$ 68.000 hectares.% (5,69\%) da Mata Atlântica.
+    \item $\approx$ 68.000 hectares, o que representa cerca de 5,69\% da Mata Atlântica.
     \item Região urbanizada.
-    \item Plano de manejo que define ações e restrições.
-    \item Petrópolis e municípios adjacentes.
+    \item Possui um plano de manejo que define ações e restrições.
+    \item Abrange Petrópolis e municípios adjacentes.
     \item Ações de conservação realizadas pelo ICMBio:
     \begin{itemize}
-        \item Monitoramento Ambiental
-        \item Manutenção de trilhas ecológicas
-        \item Recuperação de áreas degradadas
-        \item Combate a incêndios
-        \item Proteção de espécies ameaçadas de extinção
-        \item Invasão de terras
+        \item Monitoramento ambiental.
+        \item Manutenção de trilhas ecológicas.
+        \item Recuperação de áreas degradadas.
+        \item Combate a incêndios.
+        \item Proteção de espécies ameaçadas de extinção.
+        \item Controle de invasões de terras.
     \end{itemize}
 \end{itemize}
+
 
 \column{0.5\textwidth}
 A Fig.~\ref{fig:apa} representa a área da APA-Petrópolis, região serrana do Rio de Janeiro.
@@ -527,35 +531,34 @@ Total                   & 322 \\
 \subsection{Seleção e Rotulagem}\label{ssec:matmet5}
 
 \begin{frame}
-\color{black}{\textbf{Seleção}} - \color{gray}{Rotulagem}
-\begin{columns}[T]
-\column{0.4\textwidth}
-\begin{itemize}
-    \item Delimitar as regiões de interesse.
-    \item Definido em conjunto com equipe do ICMBio.
-    \item 8 classes
+    \textbf{Seleção} - \textcolor{gray}{Rotulagem}
+    \begin{columns}[T]
+    \column{0.4\textwidth}
     \begin{itemize}
-        \item Área Desenvolvida
-        \item Floresta
-        \item Sombra
-        \item Área em Regeneração
-        \item Solo Exposto
-        \item Água
-        \item Rocha
-        \item Agricultura
-        \item \color{red}{Piscina}
+        \item Delimitar as regiões de interesse.
+        \item Definido em conjunto com a equipe do ICMBio.
+        \item 8 classes:
+        \begin{itemize}
+            \item Área Desenvolvida
+            \item Floresta
+            \item Sombra
+            \item Área em Regeneração
+            \item Solo Exposto
+            \item Água
+            \item Rocha
+            \item Agricultura
+            \item \textcolor{red}{Piscina}
+        \end{itemize}
     \end{itemize}
-\end{itemize}
-\column{0.6\textwidth}
-\begin{figure}[!htb]
-\centering%
-\caption{Amostras do Conjunto de Dados por Classe.}%
-\label{fig:obter_imagens}
-\mode<presentation>{\includegraphics[width = 1.0\columnwidth]{./Figuras/amostras_classe-min}}%% Modo apresentação: tamanho da figura
-\mode<article>{\includegraphics[width = 0.8\columnwidth]{./Figuras/amostras_classe-min}}%% Modo artigo: tamanho da figura
-\source{Adaptado de \textcite{GE2023}.}
-\end{figure}
-\end{columns}
+    \column{0.6\textwidth}
+    \begin{figure}[!htb]
+        \centering
+        \caption{Amostras do Conjunto de Dados por Classe.}
+        \label{fig:obter_imagens}
+        \includegraphics[width=1.0\columnwidth]{./Figuras/amostras_classe-min} %% Modo apresentação: tamanho da figura
+        \source{Adaptado de \textcite{GE2023}.}
+    \end{figure}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -564,10 +567,10 @@ Total                   & 322 \\
 \begin{itemize}
     \item Auxílio de um profissional do ICMBio.
     \item Critério rígido.
-    \item Ferramentas
+    \item Ferramentas:
     \begin{itemize}
-        \item ArcGis (semi-automático, manual)
-        \item CVAT (manual)
+        \item ArcGIS (semi-automático, manual).
+        \item CVAT (manual).
     \end{itemize}
 \end{itemize}
 
@@ -593,15 +596,16 @@ Total                   & 322 \\
 \end{itemize}
 
 \begin{equation*}\label{eq:met:desbal}
-\vcenter{\hbox{\mode<presentation>{\includegraphics[width=2cm,height=2cm]{./Figuras/239-min}}}}
-\vcenter{\hbox{\mode<article>{\includegraphics[width=1cm,height=1cm]{./Figuras/239-min}}}}
-\qquad\qquad
-\begin{aligned}
-\varphi(c) = \frac{m}{C*n^{c}}
-\end{aligned}
+    \vcenter{\hbox{\mode<presentation>{\includegraphics[width=2cm, height=2cm]{./Figuras/239-min}}}}
+    \vcenter{\hbox{\mode<article>{\includegraphics[width=1cm, height=1cm]{./Figuras/239-min}}}}
+    \qquad\qquad
+    \begin{aligned}
+        \varphi(c) = \frac{m}{C \cdot n^{c}}
+    \end{aligned}
 \end{equation*}
+    
 
-\column{0.4\linewidth}
+\column{0.3\linewidth}
 \begin{table}[!htb]
 \centering%
 \mode<presentation>{\scriptsize}%% Modo apresentação: tamanho de fonte
@@ -617,10 +621,10 @@ Sombra                  &       2,0468              \\
 Área em Regeneração     &       0,4436              \\
 Agricultura             &       1,4859              \\
 Rocha                   &       2,4287              \\
-Solo Exposto            &       \colorbox{yellow}{5,2043}              \\ 
+Solo Exposto            &       \cellcolor{yellow}{5,2043}              \\ 
 Água                    &       2,0031              \\
 \bottomrule
-\addlinespace
+% \addlinespace
 \end{tabular*}
 \source{Autoria própria.}
 \end{table}
@@ -637,14 +641,15 @@ em que $m$ é o número de pixels de todas as imagens de treinamento, $C$ é o n
 \begin{frame}
 
 \begin{itemize}
-    \item \textbf{MPSegnet} proposta por \textbf{\textcite{Andre2021}}
+    \item \textbf{MPSegnet} proposta por \textbf{\textcite{Andre2021}}.
     \item Uma nova estratégia de multi-pooling, substituindo o max-pooling por \textit{Discrete Wavelet Transform} (DWT) e unpooling por \textit{Inverse Discrete Wavelet Transform} (IWT).
-    \item Conjunto de dados utilizado nos experimentos
+    \item Conjunto de dados utilizado nos experimentos:
     \begin{itemize}
-        \item 2D Semantic Labeling Contest - Potsdam 
-        \item IRRG: 3 canais (IR-R-G)
+        \item 2D Semantic Labeling Contest - Potsdam.
+        \item IRRG: 3 canais (IR-R-G).
     \end{itemize}
 \end{itemize}
+    
 
 \begin{figure}[!htb]
 \centering%
@@ -662,12 +667,13 @@ em que $m$ é o número de pixels de todas as imagens de treinamento, $C$ é o n
 \begin{itemize}
     \item \textbf{U-NET} sugerida no artigo de \textbf{\textcite{Khanh2021}}.
     \item Combinação de \textbf{EfficientNet-B0} \cite{EfficientNet} (ENCODER) para extração de características com \textbf{U-NET} \cite{Unet2015} (DECODER) para reconstrução do mapa de características.
-    \item Conjunto de dados utilizado nos experimentos
+    \item Conjunto de dados utilizado nos experimentos:
     \begin{itemize}
-        \item Imagens Aéreas (Google Earth)
-        \item RGB: 3 canais (\textit{Red-Green-Blue})
+        \item Imagens Aéreas (Google Earth).
+        \item RGB: 3 canais (\textit{Red-Green-Blue}).
     \end{itemize}
 \end{itemize}
+    
 
 \begin{columns}[T]
 \column{0.5\linewidth}
@@ -701,8 +707,8 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 
 \begin{frame}
 \begin{itemize}
-    \item Conjunto de dados dividido em treinamento e teste (Ver Tabela \ref{tab:separacao}).
-    % \item Pré-processamento: Protocolo de \textbf{janelas deslizantes} adotado também no trabalho de \textcite{Andre2021}.
+    \item Conjunto de dados dividido em treinamento e teste (ver Tabela \ref{tab:separacao}).
+    % \item Pré-processamento: Protocolo de \textbf{janelas deslizantes}, adotado também no trabalho de \textcite{Andre2021}.
     \item Pré-processamento: \textbf{10.000} amostras de \textbf{256x256} (recortes aleatórios).
     \item Inicialização dos pesos: Pesos pré-treinados na ImageNet \cite{Imagenet2009}.
 \end{itemize}
@@ -713,9 +719,9 @@ EffNet-B2   & 8M          & 1.134               & 0.747             & 1.018     
 \begin{block}{Treinamento}
     \begin{itemize}
         \item Conjunto de dados embaralhado.
-        \item Aumento de dados
+        \item Aumento de dados:
         \begin{itemize}
-            \item \textbf{Espelhamento horizontal e vertical}
+            \item \textbf{Espelhamento horizontal e vertical}.
         \end{itemize}
     \end{itemize}
 \end{block}
@@ -856,7 +862,7 @@ Isso ajuda a reduzir o impacto de pixels fáceis de classificar e permite que o 
         \textbf{Classe}                     & \textbf{Peso} \\ \midrule
         \textbf{Área Desenvolvida}          & 0,9786 \\ 
         \textbf{Floresta}                   & 0,3264 \\ 
-        \textbf{Piscina}                    & \colorbox{yellow}{51,3827} \\ 
+        \textbf{Piscina}                    & \cellcolor{yellow}{51,3827} \\ 
         \textbf{Sombra}                     & 1,7031 \\ 
         \textbf{Área em Regeneração}        & 0,3702 \\ 
         \textbf{Agricultura}                & 1,2344 \\ 
